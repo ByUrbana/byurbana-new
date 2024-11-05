@@ -66,27 +66,123 @@ import HeroVideo from "../../Hero-Home-Video.mp4";
               <p class="p-0">PARTNERS</p>
             </span>
           </div>
-          <img
-            class="rotate-90 w-4"
-            src="\Hero-Arrow.png"
-            alt="Flecha guia"
-          />
+          <img class="rotate-90 w-4" src="\Hero-Arrow.png" alt="Flecha guia" />
           <span class="font-medium text-[11px]">© 2024 BY URBANA</span>
         </footer>
       </div>
-
-      <div class="absolute top-0 bottom-0 z-10 w-full h-full">
-        <video
-          class="object-center object-cover w-full h-full"
-          autoplay
-          muted
-          loop
+      <span class="color-bg2 absolute top-0 left-0-0 z-10 w-full h-full">
+      </span>
+      <video
+        class="object-center absolute top-0 left-0 object-cover w-full h-full"
+        autoplay
+        muted
+        loop
+      >
+        <source src={HeroVideo} type="video/mp4" />
+      </video>
+    </section>
+    <section
+      class="color-bg h-screen justify-center items-center flex flex-col"
+    >
+      <div
+        class="text-white flex justify-center items-center flex-col relative"
+      >
+        <span class="text-sm font-medium tracking-widest"
+          >BIENVENIDO A BY URBANA</span
         >
-          <source src={HeroVideo} type="video/mp4" />
-        </video>
+        <h2 class="text-7xl w-3/4 color-text2">
+          <span class="font-bold text-white"
+            >Nuestro objetivo es brindarte una solución digital integral que
+            funcione como tu propio banco digital, totalmente personalizado.</span
+          >
+          Sumamos valor a tu ecosistema ofreciendo nuevas alternativas comerciales
+          y financieras que te ayudan a alcanzar tus metas con la mayor rentabilidad
+          posible.
+        </h2>
       </div>
+
+      <div class="flex items-center justify-center">
+        <a class="font-bold text-xl border-b-2 text-white" href="#"
+          >Conozca más ↗</a
+        >
+      </div>
+    </section>
+    <section class="flex flex-row h-screen">
+      <section class="relative color-bg3">
+        <div
+          class="text-white w-[600px] p-6 h-full top-0 left-0 flex justify-center items-center flex-col"
+        >
+          <div
+            class="color-text2 flex justify-center items-start flex-col gap-8 pl-12"
+          >
+            <h2 class="text-5xl leading-[]">
+              CREA ))) UN ECOSISTEMA FINANCIERO <span class="font-semibold"
+                >ÚNICO</span
+              > , DISEÑADO PARA OPTIMIZAR CADA TRANSACCION EN TU NEGOCIO
+            </h2>
+            <p class="w-72 font-semibold">
+              Simplifica tu negocio con soluciones financieras innovadoras que
+              transforman la manera en que cobras y pagas.
+            </p>
+            <a class="font-bold text-xl border-b-2 " href="#"
+              >Contacte ahora ↗</a
+            >
+          </div>
+          <div class="flex flex-col justify-start items-start">
+            <p><span class="font-semibold">SOMOS</span></p>
+            <p>EMISORES</p>
+            <p>PROCESADORES</p>
+            <p>GENERADORES</p>
+            <p>CONSULTORES</p>
+          </div>
+        </div>
+      </section>
+      <section class="color-bg w-full">
+        <div class="flex justify-center items-center h-full">
+          <div
+            class="text-white relative overflow-hidden w-[500px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-[800px] justify-between items-start"
+          >
+            <img
+              class="absolute w-full h-full top-0 left-0 object-cover"
+              src="\cards.jpg"
+              alt=""
+            />
+            <span
+              class="color-bg2 absolute z-20 w-full h-full top-0 left-0 object-cover"
+            ></span>
+            <div class="flex justify-between items-center w-full z-40">
+              <h3 class="text-5xl">
+                SOMOS <br /><span class="font-semibold">EMISORES</span>
+              </h3>
+              <span class="font-semibold text-5xl">))</span>
+            </div>
+            <p class="text-sm font-semibold w-72 z-40">
+              Desarrollamos <span class="font-medium"
+                >soluciones de pago personalizadas</span
+              > para empresas, ajustadas a tus necesidades, respaldadas por un compromiso
+              continuo con la innovación. Simplificamos y potenciamos tus transacciones
+              financieras.
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
 </Layout>
 
-<style></style>
+<!-- provisional  -->
+
+<style>
+  .color-bg {
+    background-color: #041226;
+  }
+  .color-bg2 {
+    background-color: #04122675;
+  }
+  .color-bg3 {
+    background-color: rgb(114 115 117);
+  }
+  .color-text2 {
+    color: #cce8fa;
+  }
+</style>
