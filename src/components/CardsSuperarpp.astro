@@ -1,0 +1,23 @@
+---
+interface Props {
+    title1: string;
+    title2: string;
+}
+const { title1,title2 } = Astro.props;
+---
+
+
+<div
+class="relative border border-blue-200 rounded-3xl w-[35vw] h-[50vh]"
+>
+<div class="absolute top-0 left-0 p-4">
+  <a class="text-white font-bold text-lg border-b" href="#"
+    >Ir al website ↗</a
+  >
+</div>
+
+<h3 class="text-blue-200 text-5xl absolute p-8 bottom-0 left-0">
+  {title1 } <br />
+  {title2}
+</h3>
+</div>

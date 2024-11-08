@@ -1,0 +1,37 @@
+---
+import Banner from "../components/Banner.astro";
+import CardsServicios from "../components/CardsServicios.astro";
+import Contact from "../components/Contact.astro";
+import HeroPages from "../components/HeroPages.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Servicios">
+  <main class="bg-[#adc6fb]">
+    <HeroPages title="Servicios" bgColor="#727375"/>
+    <Banner url="\servicios-banner.webp"/>
+    <section class="w-full flex justify-end items-center pb-32">
+      <div
+        class="w-[950px] flex justify-center items-center flex-col gap-7 pr-48"
+      >
+        <h3 class="text-5xl text-blue-600 font-normal">
+          Ya sea que necesites procesar pagos, gestionar cuentas o realizar
+          transferencias internacionales, tenemos las soluciones tecnológicas
+          que te permiten operar de manera eficiente y segura.
+        </h3>
+        <p class="text-blue-600 text-2xl">
+          El ecosistema ByUrbana es flexible, personalizable y está pensado para
+          adaptarse a las necesidades específicas de cada negocio, brindando
+          siempre la mayor rentabilidad y control.
+        </p>
+      </div>
+    </section>
+    <section
+      class="pb-20 flex justify-center items-center gap-10 flex-row flex-wrap"
+    >
+    <CardsServicios/>
+
+    </section>
+  </main>
+  <Contact />
+</Layout>

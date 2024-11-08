@@ -1,48 +1,14 @@
 ---
+import Contact from "../components/Contact.astro";
 import Layout from "../layouts/Layout.astro";
+import HeroPages from "../components/HeroPages.astro"
+import Banner from "../components/Banner.astro";
 ---
 
 <Layout title="Nosotros">
   <main class="bg-[#cce8fa]">
-    <section class="h-screen flex justify-center items-center">
-      <div class="grid grid-cols-[1fr_1.2fr] gap-10">
-        <div
-          class="bg-blue-600 py-24 px-20 rounded-3xl text-white flex justify-center items-center"
-        >
-          <img
-            class="w-48"
-            src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
-            alt=""
-          />
-          <img
-            class="w-48"
-            src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
-            alt=""
-          />
-          <img
-            class="w-48"
-            src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
-            alt=""
-          />
-        </div>
-        <div class="bg-white flex rounded-3xl relative">
-          <span
-            class="absolute top-0 right-0 pl-5 pr-40 pt-16 pb-5 bg-blue-600 m-5 text-blue-100 rounded-2xl font-semibold text-lg"
-            >regresar al Home</span
-          >
-          <h2
-            class="text-8xl text-blue-600 absolute left-0 bottom-0 p-10 font-bold"
-          >
-            Nosotros
-          </h2>
-        </div>
-      </div>
-    </section>
-    <section class="w-full py-10 flex justify-center items-center">
-      <div class="w-full">
-        <img class="" src="\image-banner.webp" alt="" />
-      </div>
-    </section>
+    <HeroPages title="Nosotros" bgColor="#2563eb"/>
+    <Banner url="\image-banner.webp"/>
     <section class="w-full flex justify-end items-center pb-32">
       <div
         class="w-[950px] flex justify-center items-center flex-col gap-7 pr-48"
@@ -80,16 +46,17 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </section>
-    <section class="h-screen relative pt-20">
+    <section class="h-full relative pt-44">
       <div>
-        <div class="">
-          <span></span>
-          <!-- <img
-            class="absolute w-full top-0 left-0 h-[400px] object-cover"
+        <div class="relative h-[75vh] flex justify-end items-end pb-20 pr-52">
+          <span class="bg-[#1a4c9c96] absolute top-0 left-0 z-20 w-full h-[75vh]"></span>
+          <img
+            class="absolute w-full top-0 left-0 h-[75vh] z-10 object-cover"
             src="\poster.jpg"
             alt=""
-          /> -->
-          <div class="z-20 w-[700px]">
+          />
+
+          <div class="z-40 w-[700px] relative text-white">
             <span class="text-sm font-bold">NUESTRA DIFERENCIA DESTACADA</span>
             <h2 class="text-6xl">
               <span class="font-bold"
@@ -100,21 +67,21 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
         <div
-          class="w-full bg-blue-600 text-white flex justify-end items-center"
+          class="w-full h-[65vh] bg-blue-600 text-white  flex justify-end items-center"
         >
           <div
-            class="flex justify-center items-center gap-10 flex-col w-[900px] py-20 pr-36"
+            class="flex justify-center items-center gap-10 flex-col w-[900px] py-20 pr-36 text-blue-200"
           >
             <h3 class="text-5xl">
               Nuestra presencial internacional nos distingue.
             </h3>
-            <p class="text-2xl">
+            <p class="text-2xl font-medium">
               Nuestra excelencia en estándares y nuestro impresionante 'time to
               market', que nos permite realizar proyectos en tiempos óptimos.
               Juntos establecemos nuevos estándares en la industria de los
               métodos de pago.
             </p>
-            <p class="text-2xl">
+            <p class="text-2xl font-medium">
               De la mano con Credencial Payments, está respaldada por
               certificaciones en 13 países, siendo la elección preferida por
               numerosos clientes corporativos
@@ -123,5 +90,6 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </section>
+    <Contact />
   </main>
 </Layout>

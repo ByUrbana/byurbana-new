@@ -1,0 +1,46 @@
+---
+
+interface Props {
+	title: string;
+	bgColor: string;
+}
+
+
+const { bgColor, title } = Astro.props;
+---
+
+
+<section class="h-screen flex justify-center items-center">
+  <div class="grid grid-cols-[1fr_1.2fr] gap-10">
+    <div
+      class={`bg-[${bgColor}] py-24 px-20 rounded-3xl text-white flex justify-center items-center`}
+    >
+      <img
+        class="w-[18vh]"
+        src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+        alt=""
+      />
+      <img
+        class="w-[18vh]"
+        src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+        alt=""
+      />
+      <img
+        class="w-[18vh]"
+        src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+        alt=""
+      />
+    </div>
+    <div class="bg-white flex rounded-3xl relative">
+      <span
+        class="absolute top-0 right-0 pl-5 pr-40 pt-16 pb-5 bg-blue-600 m-5 text-blue-100 rounded-2xl font-semibold text-lg"
+        >regresar al Home</span
+      >
+      <h2
+        class="text-8xl text-blue-600 absolute left-0 bottom-0 p-10 font-bold"
+      >
+        {title}
+      </h2>
+    </div>
+  </div>
+</section>

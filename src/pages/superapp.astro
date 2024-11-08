@@ -1,0 +1,218 @@
+---
+import Contact from "../components/Contact.astro";
+import Layout from "../layouts/Layout.astro";
+import HeroPages from "../components/HeroPages.astro";
+import Banner from "../components/Banner.astro";
+import CardsSuperarpp from "../components/CardsSuperarpp.astro";
+---
+
+<Layout title="SuperApp">
+  <main class="bg-blue-600">
+    <HeroPages title="SuperApp" bgColor="#cce8fa" />
+    <Banner url="\superapp-bannner.webp"/>
+    <section class="w-full flex justify-end items-center pb-32">
+      <div
+        class="w-[950px] flex justify-center items-center flex-col gap-7 pr-48"
+      >
+        <h3 class="text-5xl text-blue-200 font-normal">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          porta efficitur sagittis. Aenean ut elit auctor, lacinia arcu at,
+          faucibus dui.
+        </h3>
+        <p class="text-blue-200 text-2xl">
+          Nullam venenatis viverra fermentum. Nulla elementum faucibus nisi, et
+          luctus nulla aliquet a. Integer id porttitor nibh. Donec dapibus
+          convallis sollicitudin. Vivamus turpis libero, scelerisque ac congue
+          at, ultricies ut odio.
+        </p>
+      </div>
+    </section>
+    <section class="grid place-content-center w-full">
+      <div class="flex justify-center items-center flex-col gap-10 w-full">
+        <div class="flex justify-center items-center flex-row w-4/5">
+          <img
+            class="w-2/4 h-full object-cover rounded-3xl"
+            src="\superapp-poste.jpg"
+            alt=""
+          />
+          <div
+            class="relative bg-white w-full rounded-3xl h-full px-10 py-5 flex justify-center items-start flex-col gap-5"
+          >
+            <h2 class="text-6xl">
+              <span class="text-blue-600">DAR</span><span class="text-gray-600"
+                >AVAL</span
+              >
+              <br />
+              BY)))URBANA
+            </h2>
+            <span class="text-3xl"
+              >Garantía sin complicaciones, 100% digital.</span
+            >
+            <p class="leading-5 text-lg">
+              Realizamos todo el proceso de forma online y sin costos
+              adicionales para tu comodidad. Te brindamos asesoramiento
+              integral, desde la aprobación de tu garantía hasta la finalización
+              del contrato, asegurándonos de que estés informado en cada paso.
+              Simplificamos tu acceso a garantías con eficiencia y seguridad.
+            </p>
+            <div class="border-b-2 border-blue-600">
+              <a
+                class="absolute bottom-0 right-0 p-10 text-blue-600 font-bold text-lg"
+                href="#">Ir al website ↗</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center flex-row w-4/5">
+          <div
+            class="relative bg-white w-full rounded-3xl h-full px-10 py-5 flex justify-center items-start flex-col gap-5"
+          >
+            <h2 class="text-6xl">
+              <span class="text-blue-600">URBANA</span><span
+                class="text-gray-600">GO</span
+              >
+              <br />
+              BY)))URBANA
+            </h2>
+            <span class="text-3xl"
+              >Todo tu contenido en una sola plataforma.</span
+            >
+            <p class="leading-5 text-lg">
+              Una plataforma diseñada para vos. Incluye Urbana+: televisión
+              clásica con tus canales de siempre; VivaLiveTv: TV internacional
+              gratuita; UrbanaKids: contenido infantil seguro; y UrbanaMúsica:
+              disfruta de tu música y videos favoritos estés donde estés.
+              UrbanaGo es entretenimiento sin límites, siempre a tu alcance.
+            </p>
+            <div class="border-b-2 border-blue-600">
+              <a
+                class="absolute bottom-0 right-0 p-10 text-blue-600 font-bold text-lg"
+                href="#">Ir al website ↗</a
+              >
+            </div>
+          </div>
+          <img
+            class="w-2/4 h-full object-cover rounded-3xl"
+            src="\superapp-poste.jpg"
+            alt=""
+          />
+        </div>
+        <div class="flex justify-center items-center flex-row w-4/5">
+          <img
+            class="w-2/4 h-full object-cover rounded-3xl"
+            src="\superapp-poste.jpg"
+            alt=""
+          />
+          <div
+            class="relative bg-white w-full rounded-3xl h-full px-10 py-5 flex justify-center items-start flex-col gap-5"
+          >
+            <h2 class="text-6xl">
+              <span class="text-blue-600">TABLE</span><span
+                class="text-gray-600">FAST</span
+              >
+              <br />
+              BY)))URBANA
+            </h2>
+            <span class="text-3xl"
+              >Innovación que mejora tu experiencia gastronómica.</span
+            >
+            <p class="leading-5 text-lg">
+              Nuestro sistema interactivo de QR está pensado para modernizar el
+              mundo gastronómico, facilitando una nueva modalidad de atención en
+              restaurantes. Agilizamos el servicio y mejoramos la experiencia
+              del cliente, todo con un simple escaneo.
+            </p>
+            <div class="border-b-2 border-blue-600">
+              <a
+                class="absolute bottom-0 right-0 p-10 text-blue-600 font-bold text-lg"
+                href="#">Ir al website ↗</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center flex-row w-4/5">
+          <div
+            class="relative bg-white w-full rounded-3xl h-full px-10 py-5 flex justify-center items-start flex-col gap-5"
+          >
+            <h2 class="text-6xl">
+              <span class="text-blue-600">ENTRADA</span><span
+                class="text-gray-600">MASTER</span
+              >
+              <br />
+              BY)))URBANA
+            </h2>
+            <span class="text-3xl"
+              >El acceso a tus eventos, más simple que nunca.</span
+            >
+            <p class="leading-5 text-lg">
+              Plataforma de ticketing simple, accesible e innovadora para la
+              venta de entradas a eventos deportivos, culturales y de
+              entretenimiento en vivo. Creemos en la importancia de experiencias
+              compartidas, por eso hacemos que tu acceso al entretenimiento sea
+              rápido y fácil.
+            </p>
+            <div class="border-b-2 border-blue-600">
+              <a
+                class="absolute bottom-0 right-0 p-10 text-blue-600 font-bold text-lg"
+                href="#">Ir al website ↗</a
+              >
+            </div>
+          </div>
+          <img
+            class="w-2/4 h-full object-cover rounded-3xl"
+            src="\superapp-poste.jpg"
+            alt=""
+          />
+        </div>
+        <div class="flex justify-center items-center flex-row w-4/5">
+          <img
+            class="w-2/4 h-full object-cover rounded-3xl"
+            src="\superapp-poste.jpg"
+            alt=""
+          />
+          <div
+            class="relative bg-white w-full rounded-3xl h-full px-10 py-5 flex justify-center items-start flex-col gap-5"
+          >
+            <h2 class="text-6xl">
+              <span class="text-blue-600">MEQUIERO</span><span
+                class="text-gray-600">MUDAR</span
+              >
+              <br />
+              BY)))URBANA
+            </h2>
+            <span class="text-3xl">Mudarte nunca fue tan fácil.</span>
+            <p class="leading-5 text-lg">
+              El portal ideal para comprar o alquilar tu nuevo hogar. Ofrecemos
+              soluciones completas para tu mudanza, con servicios de traslado,
+              mantenimiento y remodelación, respaldados por profesionales
+              recomendados por la comunidad. MeQuieroMudar te acompaña en cada
+              paso, haciendo que tu nueva vida comience sin complicaciones.
+            </p>
+            <div class="border-b-2 border-blue-600">
+              <a
+                class="absolute bottom-0 right-0 p-10 text-blue-600 font-bold text-lg"
+                href="#">Ir al website ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-28 pt-20 flex justify-center items-center">
+      <div class="flex justify-center items-center gap-10 flex-col w-4/5">
+        <h4
+          class="border-b border-blue-300 w-full pb-6 text-xl text-blue-300 font-semibold"
+        >
+          Y MÁS SERVICIOS PARA VOS )))
+        </h4>
+        <div class="w-full flex justify-center items-center flex-row gap-10">
+          <CardsSuperarpp title1="ENVIOS" title2="URBANA"/>
+          <CardsSuperarpp title1="URBANA" title2="PAY"/>
+          <CardsSuperarpp title1="TURISMO" title2="URBANA"/>
+
+        </div>
+      </div>
+    </section>
+    <Contact />
+  </main>
+</Layout>

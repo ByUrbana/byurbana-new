@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroVideo from "../../Hero-Home-Video.mp4";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="BYU_Home">
@@ -9,24 +10,26 @@ import HeroVideo from "../../Hero-Home-Video.mp4";
       <div
         class="z-20 relative text-white flex flex-col w-full h-full justify-center items-center"
       >
-        <header
-          class="flex justify-center items-start flex-col gap-6 pt-60 w-[550px] relative left-44"
-        >
-          <p class="font-semibold text-xs tracking-widest">
-            BESPOKE FINTECH-INSURTECH SOLUTIONS
-          </p>
-          <h1 class="text-7xl">
-            <span class="font-black">FACILITAMOS</span> LA <span
-              class="whitespace-nowrap">))) INTEGRACIÓN )))</span
-            > DE ECOSISTEMAS DE PAGO.
-          </h1>
-          <p class="font-medium text-lg">
-            Desde la emisión de tarjetas hasta la gestión de pagos digitales,
-            nuestras herramientas personalizadas impulsan el crecimiento
-            financiero de su empresa.
-          </p>
-          <a class="font-bold text-xl border-b-2" href="#">Conozca más ↗</a>
-        </header>
+        <div class="flex justify-center items-center h-full max">
+          <header
+            class="flex justify-center items-start flex-col gap-6 max-[1367px]:pt-20 w-[550px] relative left-44"
+          >
+            <p class="font-semibold text-xs tracking-widest">
+              BESPOKE FINTECH-INSURTECH SOLUTIONS
+            </p>
+            <h1 class="text-7xl max-[1366px]:text-6xl max-[1280px]:text-5xl">
+              <span class="font-black">FACILITAMOS</span> LA <span
+                class="whitespace-nowrap">))) INTEGRACIÓN )))</span
+              > DE ECOSISTEMAS DE PAGO.
+            </h1>
+            <p class="font-medium text-lg">
+              Desde la emisión de tarjetas hasta la gestión de pagos digitales,
+              nuestras herramientas personalizadas impulsan el crecimiento
+              financiero de su empresa.
+            </p>
+            <a class="font-bold text-xl border-b-2" href="#">Conozca más ↗</a>
+          </header>
+        </div>
         <footer
           class="flex flex-grow flex-row justify-between pl-36 pr-36 w-full items-end pb-9"
         >
@@ -57,12 +60,14 @@ import HeroVideo from "../../Hero-Home-Video.mp4";
       class="bg-[#041226] h-screen justify-center items-center flex flex-col"
     >
       <div
-        class="text-white flex justify-center items-center flex-col relative"
+        class="text-white flex justify-center items-center flex-col relative gap-10"
       >
         <span class="text-sm font-medium tracking-widest"
           >BIENVENIDO A BY URBANA</span
         >
-        <h2 class="text-7xl w-3/4 text-[#cce8fa]">
+        <h2
+          class="text-7xl max-[1440px]:text-6xl max-[1367px]:text-5xl max-[1025px]:text-4xl w-3/4 text-[#cce8fa]"
+        >
           <span class="font-bold text-white"
             >Nuestro objetivo es brindarte una solución digital integral que
             funcione como tu propio banco digital, totalmente personalizado.</span
@@ -71,37 +76,39 @@ import HeroVideo from "../../Hero-Home-Video.mp4";
           y financieras que te ayudan a alcanzar tus metas con la mayor rentabilidad
           posible.
         </h2>
-      </div>
-
-      <div class="flex items-center justify-center">
-        <a class="font-bold text-xl border-b-2 text-white" href="#"
-          >Conozca más ↗</a
-        >
+        <div class="flex items-center justify-center">
+          <a class="font-bold text-xl border-b-2 text-white" href="#"
+            >Conozca más ↗</a
+          >
+        </div>
       </div>
     </section>
     <section class="flex flex-row h-screen overflow-hidden border-t">
-      <section class="relative bg-[#727375]">
+      <section class="relative bg-[#727375] z-30">
         <div
-          class="text-white w-[600px] p-6 h-full top-0 left-0 flex justify-evenly items-start flex-col"
+          class="text-white w-[35vw] p-6 h-full top-0 left-0 flex justify-evenly items-start flex-col"
         >
           <div
-            class="text-blue-100 flex justify-center items-start flex-col gap-8 pl-24"
+            class="text-blue-100 flex justify-center items-start flex-col gap-8 pl-24 max-[1440px]:pl-10"
           >
-            <h2 class="text-5xl leading-[]">
+            <h2 class="text-5xl max-[1440px]:text-4xl max-[1025px]:text-2xl">
               CREA ))) UN ECOSISTEMA FINANCIERO <span class="font-bold"
                 >ÚNICO</span
               > , DISEÑADO PARA OPTIMIZAR CADA TRANSACCION EN TU NEGOCIO
             </h2>
-            <p class="w-72 font-semibold text-lg -tracking-wider">
+            <p
+              class="w-72 font-semibold text-lg max-[1025px]:text-base -tracking-wider"
+            >
               Simplifica tu negocio con soluciones financieras innovadoras que
               transforman la manera en que cobras y pagas.
             </p>
-            <a class="font-bold text-xl border-b-2 border-blue-200" href="#"
-              >Contacte ahora ↗</a
+            <a
+              class="font-bold text-xl max-[1025px]:text-lg border-b-2 border-blue-200"
+              href="#">Contacte ahora ↗</a
             >
           </div>
           <div
-            class="flex flex-col justify-start items-start font-semibold pl-24 text-lg leading-5"
+            class="flex flex-col justify-start items-start font-semibold pl-24 text-lg max-[1025px]:text-base leading-5"
           >
             <p><span class="font-extrabold">SOMOS</span></p>
             <p>EMISORES</p>
@@ -114,23 +121,25 @@ import HeroVideo from "../../Hero-Home-Video.mp4";
       <section class="bg-[#041226] w-full pl-32">
         <div class="flex justify-center gap-24 items-center h-full">
           <div
-            class="card text-white relative overflow-hidden w-[500px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-[750px] justify-between items-start"
+            class="card text-white relative overflow-hidden min-w-[30vw] max-[1025px]:min-w-[40vw] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
           >
             <img
-              class="absolute w-full h-full top-0 left-0 object-cover"
+              class="absolute h-full top-0 left-0 object-cover"
               src="\cards.jpg"
               alt=""
             />
             <span
-              class="bg-[#04122675] absolute z-20 w-full h-full top-0 left-0 object-cover"
+              class="bg-[#04122675] absolute z-10 h-full w-full top-0 left-0 object-cover"
             ></span>
-            <div class="flex justify-between items-start w-full z-40">
-              <h3 class="text-5xl">
+            <div class="flex justify-between items-start w-full z-20">
+              <h3 class="text-5xl max-[1025px]:text-3xl">
                 SOMOS <br /><span class="font-semibold">EMISORES</span>
               </h3>
-              <span class="font-semibold text-5xl">)))</span>
+              <span class="font-semibold max-[1025px]:text-3xl">)))</span>
             </div>
-            <p class="text-lg font-semibold w-72 z-40 leading-5">
+            <p
+              class="text-lg max-[1025px]:text-base font-semibold w-72 z-20 leading-5"
+            >
               Desarrollamos <span class="font-extrabold"
                 >soluciones de pago personalizadas</span
               > para empresas, ajustadas a tus necesidades, respaldadas por un compromiso
@@ -139,23 +148,23 @@ import HeroVideo from "../../Hero-Home-Video.mp4";
             </p>
           </div>
           <div
-            class="card text-white relative overflow-hidden w-[500px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-[750px] justify-between items-start"
+            class="card text-white relative overflow-hidden w-[500px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
           >
             <img
-              class="absolute w-full h-full top-0 left-0 object-cover"
+              class="absolute h-full top-0 left-0 object-cover"
               src="\cards.jpg"
               alt=""
             />
             <span
-              class="bg-[#04122675] absolute z-20 w-full h-full top-0 left-0 object-cover"
+              class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
             ></span>
-            <div class="flex justify-between items-start w-full z-40">
+            <div class="flex justify-between items-start w-full z-20">
               <h3 class="text-5xl">
                 SOMOS <br /><span class="font-semibold">EMISORES</span>
               </h3>
               <span class="font-semibold text-5xl">)))</span>
             </div>
-            <p class="text-lg font-semibold w-72 z-40 leading-5">
+            <p class="text-lg font-semibold w-72 z-20 leading-5">
               Desarrollamos <span class="font-extrabold"
                 >soluciones de pago personalizadas</span
               > para empresas, ajustadas a tus necesidades, respaldadas por un compromiso
@@ -164,23 +173,23 @@ import HeroVideo from "../../Hero-Home-Video.mp4";
             </p>
           </div>
           <div
-            class="card text-white relative overflow-hidden w-[500px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-[750px] justify-between items-start"
+            class="card text-white relative overflow-hidden w-[500px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
           >
             <img
-              class="absolute w-full h-full top-0 left-0 object-cover"
+              class="absolute h-full top-0 left-0 object-cover"
               src="\cards.jpg"
               alt=""
             />
             <span
-              class="bg-[#04122675] absolute z-20 w-full h-full top-0 left-0 object-cover"
+              class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
             ></span>
-            <div class="flex justify-between items-start w-full z-40">
+            <div class="flex justify-between items-start w-full z-20">
               <h3 class="text-5xl">
                 SOMOS <br /><span class="font-semibold">EMISORES</span>
               </h3>
               <span class="font-semibold text-5xl">)))</span>
             </div>
-            <p class="text-lg font-semibold w-72 z-40 leading-5">
+            <p class="text-lg font-semibold w-72 z-20 leading-5">
               Desarrollamos <span class="font-extrabold"
                 >soluciones de pago personalizadas</span
               > para empresas, ajustadas a tus necesidades, respaldadas por un compromiso
@@ -195,84 +204,39 @@ import HeroVideo from "../../Hero-Home-Video.mp4";
     <section
       class="bg-gray-900 h-[110vh] flex justify-center items-center flex-col"
     >
-      <div class="flex justify-center items-start flex-col">
-        <h3 class="text-blue-100 font-medium text-lg pb-4">
-          EN ))) PARTNERSHIP ))) CON
-        </h3>
-        <div
-          class="grid grid-cols-2 gap-10 py-20 border-y-2 border-gray-500 w[1000px]"
-        >
+      <div class="flex justify-center items-center flex-col">
+        <div class="flex justify-center items-center flex-col">
+          <h3 class="text-blue-100 font-medium text-lg pb-4">
+            EN ))) PARTNERSHIP ))) CON
+          </h3>
           <div
-            class="flex justify-center items-center rounded-3xl bg-white w-[800px] h-64"
+            class="grid grid-cols-2 gap-10 py-20 border-y-2 border-gray-500 w-4/5 h-[60vh]"
           >
-            <img class="w-2/4" src="parnership-binance.webp" alt="" />
-          </div>
-          <div
-            class="flex justify-center items-center rounded-3xl bg-white w-[800px] h-64"
-          >
-            <img class="w-2/4" src="\parnership-mastercard.webp" alt="" />
-          </div>
-          <div
-            class="flex justify-center items-center rounded-3xl bg-white w-[800px] h-64"
-          >
-            <img class="w-2/4" src="\partnership-plataforma10.webp" alt="" />
-          </div>
-          <div
-            class="flex justify-center items-center rounded-3xl bg-white w-[800px] h-64"
-          >
-            <img class="w-2/4" src="\partnership-credencial.webp" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- CONTACT -->
-    <section
-      class="flex justify-center items-center h-screen bg-slate-950 text-white"
-    >
-      <div class="grid grid-cols-[1fr_2fr] mx-32">
-        <div class="w-[600px] border-x-2 border-gray-600 px-10">
-          <span class="text-sm font-semibold text-blue-200">
-            CONTACTATE CON BYURBANA
-          </span>
-          <h2 class="text-8xl text-blue-200 leading-[.8]">
-            Potencia tu negocio. <span class="font-semibold"
-              >Traelo a By)))Urbana</span
+            <div
+              class="flex justify-center items-center rounded-3xl bg-white w-full"
             >
-          </h2>
-          <p class="text-lg font-semibold pt-10 leading-5">
-            Desde la emisión de tarjetas hasta la gestión de pagos digitales,
-            nuestras herramientas personalizadas impulsan el crecimiento
-            financiero de su empresa.
-          </p>
+              <img class="w-2/4" src="parnership-binance.webp" alt="" />
+            </div>
+            <div
+              class="flex justify-center items-center rounded-3xl bg-white w-full"
+            >
+              <img class="w-2/4" src="\parnership-mastercard.webp" alt="" />
+            </div>
+            <div
+              class="flex justify-center items-center rounded-3xl bg-white w-full"
+            >
+              <img class="w-2/4" src="\partnership-plataforma10.webp" alt="" />
+            </div>
+            <div
+              class="flex justify-center items-center rounded-3xl bg-white w-full"
+            >
+              <img class="w-2/4" src="\partnership-credencial.webp" alt="" />
+            </div>
+          </div>
         </div>
-        <form
-          class="flex justify-center items-center flex-col flex-grow gap-5 mx-10 border-r-2 border-gray-600 pr-10"
-          action=""
-        >
-          <input class="p-6 w-full" placeholder="NOMBRE" type="text" />
-          <input class="p-6 w-full" placeholder="APELLIDO" type="text" />
-          <input class="p-6 w-full" placeholder="CORREO" type="text" />
-          <input class="p-6 w-full" placeholder="TELEFONO" type="text" />
-          <button class="bg-gray-700 p-6 w-full">Enviar</button>
-        </form>
-        <div class="flex gap-3 items-center pt-32">
-          <img class="w-12" src="\Mastercar-Icon.svg" alt="Mastercar Logo" />
-          <span class="font-semibold tracking-widest text-[12px]">
-            <p class="p-0">SOMOS</p>
-            <p class="p-0">MASTERCARD</p>
-            <p class="p-0">PARTNERS</p>
-          </span>
-        </div>
-        <p class="pt-32 text-xs font-medium">
-          Al enviar tus datos personales a través de este formulario, aceptás
-          nuestra Política de Privacidad y autorizás el tratamiento de la
-          información proporcionada para fines comerciales y administrativos.
-          Tus datos serán utilizados exclusivamente para gestionar tu solicitud
-          y mejorar la atención, garantizando su confidencialidad y seguridad
-          conforme a la legislación vigente.
-        </p>
       </div>
     </section>
+    <Contact />
   </main>
 </Layout>
 
