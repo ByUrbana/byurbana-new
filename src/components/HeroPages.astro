@@ -1,14 +1,11 @@
 ---
-
 interface Props {
-	title: string;
-	bgColor: string;
+  title: string;
+  bgColor: string;
 }
-
 
 const { bgColor, title } = Astro.props;
 ---
-
 
 <section class="h-screen flex justify-center items-center">
   <div class="grid grid-cols-[1fr_1.2fr] gap-10">
@@ -32,10 +29,13 @@ const { bgColor, title } = Astro.props;
       />
     </div>
     <div class="bg-white flex rounded-3xl relative">
-      <span
-        class="absolute top-0 right-0 pl-5 pr-40 pt-16 pb-5 bg-blue-600 m-5 text-blue-100 rounded-2xl font-semibold text-lg"
-        >regresar al Home</span
+      <div class="absolute top-5 right-5 pt-16 pb-5 pl-5 pr-40 bg-blue-600 rounded-2xl">
+        <a href="/"
+        class=" text-blue-100  border-b-2  font-bold text-lg"
+        >↖ regresar al Home</a
       >
+      </div>
+
       <h2
         class="text-8xl text-blue-600 absolute left-0 bottom-0 p-10 font-bold"
       >
