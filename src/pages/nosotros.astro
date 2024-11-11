@@ -1,23 +1,23 @@
 ---
 import Contact from "../components/Contact.astro";
 import Layout from "../layouts/Layout.astro";
-import HeroPages from "../components/HeroPages.astro"
+import HeroPages from "../components/HeroPages.astro";
 import Banner from "../components/Banner.astro";
 ---
 
-<Layout title="Nosotros">
+<Layout title="BYU_Nosotros">
   <main class="bg-[#cce8fa]">
-    <HeroPages title="Nosotros" bgColor="#2563eb"/>
-    <Banner url="\image-banner.webp"/>
+    <HeroPages title="Servicios" bgColor="#727375"/>
+    <Banner url="\image-banner.webp" />
     <section class="w-full flex justify-end items-center pb-32">
       <div
-        class="w-[950px] flex justify-center items-center flex-col gap-7 pr-48"
+        class="w-[950px] flex justify-center items-center flex-col gap-7 pr-48 max-[1440px]:pr-28 max-[1440px]:w-[700px] "
       >
-        <h3 class="text-5xl text-blue-600 font-normal">
+        <h3 class="text-5xl max-[1440px]:text-4xl text-blue-600 font-normal">
           En ByUrbana, somos pioneros en la creación de soluciones digitales
           financieras adaptadas a las necesidades de cada empresa.
         </h3>
-        <p class="text-blue-600 text-2xl">
+        <p class="text-blue-600 text-2xl max-[1440px]:text-xl">
           Nuestra misión es simplificar y potenciar los ecosistemas comerciales
           y financieros mediante herramientas personalizadas que te permitan
           operar con la eficiencia de un banco digital propio. Con un equipo de
@@ -29,67 +29,96 @@ import Banner from "../components/Banner.astro";
       </div>
     </section>
     <section>
-      <div
-        class="text-blue-200 text-9xl font-bold grid grid-cols-2 h-[600px] gap-10 mx-36"
-      >
-        <div
-          class="bg-blue-600 rounded-3xl flex justify-between items-start p-10"
-        >
-          <h2>Misión</h2>
-          <span>+</span>
-        </div>
-        <div
-          class="bg-blue-600 rounded-3xl flex justify-between items-start p-10"
-        >
-          <h2>Visión</h2>
-          <span>+</span>
-        </div>
-      </div>
-    </section>
-    <section class="h-full relative pt-44">
-      <div>
-        <div class="relative h-[75vh] flex justify-end items-end pb-20 pr-52">
-          <span class="bg-[#1a4c9c96] absolute top-0 left-0 z-20 w-full h-[75vh]"></span>
-          <img
-            class="absolute w-full top-0 left-0 h-[75vh] z-10 object-cover"
-            src="\poster.jpg"
-            alt=""
-          />
-
-          <div class="z-40 w-[700px] relative text-white">
-            <span class="text-sm font-bold">NUESTRA DIFERENCIA DESTACADA</span>
-            <h2 class="text-6xl">
-              <span class="font-bold"
-                >EXCELENCIA <br /> INTERNACIONAL & <br /></span
-              >
-              ))) VELOCIDAD ))) DE <br /> IMPLEMENTACIÓN
-            </h2>
-          </div>
-        </div>
-        <div
-          class="w-full h-[65vh] bg-blue-600 text-white  flex justify-end items-center"
-        >
+      <div class="text-blue-200 grid grid-cols-2 h-[65vh] gap-10 mx-36">
+        <div class="relative overflow-hidden">
           <div
-            class="flex justify-center items-center gap-10 flex-col w-[900px] py-20 pr-36 text-blue-200"
+            class="z-20 bg-blue-600 rounded-3xl h-full hover:opacity-0 transition-all duration-500 flex justify-between items-start p-10 absolute top-0 left-0 w-full text-9xl max-[1440px]:text-8xl font-bold"
           >
-            <h3 class="text-5xl">
-              Nuestra presencial internacional nos distingue.
-            </h3>
-            <p class="text-2xl font-medium">
-              Nuestra excelencia en estándares y nuestro impresionante 'time to
-              market', que nos permite realizar proyectos en tiempos óptimos.
-              Juntos establecemos nuevos estándares en la industria de los
-              métodos de pago.
+            <h2>Misión</h2>
+            <span>+</span>
+          </div>
+          <div
+            class="bg-blue-200 z-10 rounded-3xl text-gray-500 absolute top-0 left-0 w-full h-full flex justify-center items-start flex-col p-10"
+          >
+            <span class="absolute top-0 left-0 p-8 text-2xl text-blue-600">Nuesta Misión</span>
+            <p class="text-4xl max-[1700px]:text-3xl max-[1470px]:text-2xl  font-medium">
+              Queremos ser lideres en el mercado Fintech-Insurtech satisfaciendo
+              las necesidades financieras digitales de nuestros clientes y
+              contribuyenfo a alcanzar el exito del ecosistema de pagos.
+              Elevamos continuemente el nivel de la experiencia mediante la
+              optimiazcion de los recursos y la tecnologia, generando modelos de
+              negocios innovadores y ganadores.
             </p>
-            <p class="text-2xl font-medium">
-              De la mano con Credencial Payments, está respaldada por
-              certificaciones en 13 países, siendo la elección preferida por
-              numerosos clientes corporativos
+          </div>
+        </div>
+        <div class="relative overflow-hidden">
+          <div
+            class="z-20 bg-blue-600 rounded-3xl h-full hover:opacity-0 transition-all duration-500 flex justify-between items-start p-10 absolute top-0 left-0 w-full text-9xl font-bold"
+          >
+            <h2>Visión</h2>
+            <span>+</span>
+          </div>
+          <div
+            class="bg-blue-200 z-10 rounded-3xl text-gray-500 absolute top-0 left-0 w-full h-full flex justify-center items-start flex-col p-10"
+          >
+            <span class="absolute top-0 left-0 p-8 text-2xl text-blue-600">Nuesta Visión</span>
+            <p class="text-4xl font-medium">
+              Ofrecer una solucion integral que preste los servicios de un banco
+              digital propio y personalizado. Afrefamos valor a tu ecosistema y
+              combinamos la innovacion tecnologica para proporcionar servicios
+              financieros de manera, agil y accesible.
             </p>
           </div>
         </div>
       </div>
+      <section class="h-full relative pt-44">
+        <div>
+          <div class="relative h-[75vh] flex justify-end items-end pb-20 pr-52">
+            <span
+              class="bg-[#1a4c9c96] absolute top-0 left-0 z-20 w-full h-[75vh]"
+            ></span>
+            <img
+              class="absolute w-full top-0 left-0 h-[75vh] z-10 object-cover"
+              src="\poster.jpg"
+              alt=""
+            />
+
+            <div class="z-40 w-[700px] relative text-white">
+              <span class="text-sm font-bold">NUESTRA DIFERENCIA DESTACADA</span
+              >
+              <h2 class="text-6xl">
+                <span class="font-bold"
+                  >EXCELENCIA <br /> INTERNACIONAL & <br /></span
+                >
+                ))) VELOCIDAD ))) DE <br /> IMPLEMENTACIÓN
+              </h2>
+            </div>
+          </div>
+          <div
+            class="w-full h-[65vh] bg-blue-600 text-white flex justify-end items-center"
+          >
+            <div
+              class="flex justify-center items-center gap-10 flex-col w-[900px] py-20 pr-36 text-blue-200"
+            >
+              <h3 class="text-5xl">
+                Nuestra presencial internacional nos distingue.
+              </h3>
+              <p class="text-2xl font-medium">
+                Nuestra excelencia en estándares y nuestro impresionante 'time
+                to market', que nos permite realizar proyectos en tiempos
+                óptimos. Juntos establecemos nuevos estándares en la industria
+                de los métodos de pago.
+              </p>
+              <p class="text-2xl font-medium">
+                De la mano con Credencial Payments, está respaldada por
+                certificaciones en 13 países, siendo la elección preferida por
+                numerosos clientes corporativos
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Contact />
     </section>
-    <Contact />
   </main>
 </Layout>

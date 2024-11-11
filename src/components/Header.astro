@@ -2,21 +2,37 @@
   <nav class="flex justify-between pl-36 pr-36 items-center w-full">
     <div>
       <div>
-        <a class="group" href="#"
-          ><img
-            class="w-7"
-            src="/navbar-icon.png"
-            alt="Icono de navegacion"
-          /></a
-        >
-        <ul class="bg-[#adc6fb] group-hover:flex p-20 rounded-xl justify-center items-center gap-1 flex-col text-black hidden ">
-          <li><a class="text-6xl" href="#">Home</a></li>
-          <li><a class="text-6xl" href="#">Servicios</a></li>
-          <li><a class="text-6xl" href="#">Nosotros</a></li>
-          <li><a class="text-6xl" href="#">Beneficios</a></li>
-          <li><a class="text-6xl" href="#">Superapp</a></li>
-          <li><a class="text-6xl" href="#">Contacto</a></li>
-        </ul>
+        <div id="botttomburger" class="cursor-pointer">
+          <img class="w-7" src="/navbar-icon.png" alt="Icono de navegacion" />
+        </div>
+        <div id="menu" class=" bg-[#adc6fb] rounded-2xl justify-center items-center flex-col absolute hidden transform transition-all ">
+          <ul
+            class="flex  gap-4 flex-col text-black relative p-10 w-[700px] h-[750px]"
+          >
+            <li><a class="text-7xl" href="/">Home</a></li>
+            <li><a class="text-7xl" href="/servicios">Servicios</a></li>
+            <li><a class="text-7xl" href="/nosotros">Nosotros</a></li>
+            <li><a class="text-7xl" href="/superapp">Superapp</a></li>
+            <li><a class="text-7xl" href="/contacto">Contacto</a></li>
+          </ul>
+          <button id="bottom-close" class="absolute top-5 right-5 py-4 px-16 rounded-2xl border-black border text-black text-3xl font-medium">X</button>
+          <div class="flex justify-between w-full flex-row p-10 items-end absolute bottom-0 text-black text-lg">
+            <div>
+              <a class="border-b-4 border-black" href="">Instagram</a>
+              <span>↗</span>
+            </div>
+            <div>
+              <a class="border-b-4 border-black" href="">LinkedIn</a>
+              <span>↗</span>
+            </div>
+            <div class="flex justify-center items-center gap-0 flex-col text-sm font-medium">
+              <p>PRIVACY POLICY</p>
+              <p>COOKIE POLICY</p>
+              <p>WEBSITE TEM OF USE</p>
+              <p>LEGAL NOTICE</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <a href="/#" class="font-medium text-2xl"
@@ -27,4 +43,33 @@
       class="font-normal text-base border rounded-full pl-6 pr-6">CONTÁCTENOS</a
     >
   </nav>
+  <script>
+    let menu = document.getElementById("menu");
+    let botttomburger = document.getElementById("botttomburger");
+    let botttomclose = document.getElementById("bottom-close");
+
+    botttomburger?.addEventListener("click", () => {
+      if (menu?.classList.contains("flex1")) {
+        menu?.classList.remove("flex1");
+        console.log("first");
+      } else {
+        menu?.classList.add("flex1");
+      }
+    });
+
+    botttomclose?.addEventListener("click", () => {
+      if (menu?.classList.contains("flex1")) {
+        menu?.classList.remove("flex1");
+        console.log("first");
+      } else {
+        menu?.classList.add("flex1");
+      }
+    });
+  </script>
 </header>
+
+<style>
+  .flex1 {
+    display: flex;
+  }
+</style>
