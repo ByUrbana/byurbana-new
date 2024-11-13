@@ -8,36 +8,43 @@ const { bgColor, title } = Astro.props;
 ---
 
 <section class="h-screen flex justify-center items-center">
-  <div class="grid grid-cols-[1fr_1.2fr] gap-10 px-8">
+  <div
+    class="grid grid-cols-[1fr_1.2fr] gap-10 px-8 max-[800px]:grid-cols-1 h-[80vh]"
+  >
     <div
-      class={`bg-[${bgColor}] py-24 px-20 rounded-3xl text-white flex justify-center items-center`}
+      class={`bg-[${bgColor}] py- max-[770px]:py-10 px-20 rounded-3xl text-white flex justify-center items-center max-[800px]:hidde`}
     >
       <img
-        class="w-[18vh]"
+        class="w-[10vw] max-[800px]:h-[30vh] object-contain"
         src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
         alt=""
       />
       <img
-        class="w-[18vh]"
+        class="w-[10vw] max-[800px]:h-[30vh] object-contain"
         src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
         alt=""
       />
       <img
-        class="w-[18vh]"
+        class="w-[10vw] max-[800px]:h-[30vh] object-contain"
         src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
         alt=""
       />
     </div>
-    <div class="bg-white flex rounded-3xl relative">
-      <div class="absolute top-5 right-5 pt-16 pb-5 pl-5 pr-40 bg-blue-600 rounded-2xl">
-        <a href="/"
-        class=" text-blue-100  border-b-2  font-bold text-lg"
-        >↖ regresar al Home</a
+    <div
+      class="bg-white flex py-24 max-[770px]:py-10 px-20 rounded-3xl relative max-[800px]:w-[55vw] max-[800px]:h-[40vh]"
+    >
+      <div
+        class="absolute top-5 right-5 pt-16 pb-5 pl-5 pr-40 bg-blue-600 rounded-2xl max-[1000px]:pt-8 max-[1000px]:pb-2 max-[1000px]:pr-20"
       >
+        <a
+          href="/"
+          class="text-blue-100 border-b-2 font-bold text-lg max-[1000px]:text-base"
+          >↖ regresar al Home</a
+        >
       </div>
 
       <h2
-        class="text-8xl text-blue-600 absolute left-0 bottom-0 p-10 font-bold"
+        class="text-8xl text-blue-600 absolute left-0 bottom-0 p-10 font-bold max-[1000px]:text-7xl max-[700px]:text-5xl"
       >
         {title}
       </h2>

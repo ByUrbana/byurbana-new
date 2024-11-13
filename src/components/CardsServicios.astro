@@ -5,67 +5,71 @@ const CardArray = [
     title: "Autorización y Gestión de Pagos Seguros",
     description:
       "Facilitamos el procesamiento de pagos a nivel nacional e internacional, asegurando la autorización rápida y segura de cada transacción. Nuestra infraestructura garantiza un flujo constante de fondos, brindando tranquilidad tanto a tu empresa como a tus clientes.",
-    imageUrl: "\logo-pago-seguro.webp",
+    imageUrl: "logo-pago-seguro.webp",
   },
   {
     supTitle: "EMISIONES DE CUENTAS DIGITALES",
     title: "Tarjetas de Débito, Crédito y Prepagadas Personalizadas",
     description:
       "Creá tu propio ecosistema financiero con la emisión de cuentas digitales y tarjetas (débito, crédito y prepagadas) que permiten a tus usuarios realizar transacciones de manera ágil y confiable. Ofrecemos soluciones adaptadas a las necesidades de tu negocio y mercado.",
-    imageUrl: "\logo-targeta-de-credito.webp",
+    imageUrl: "logo-targeta-de-credito.webp",
   },
   {
     supTitle: "Gestión Fiscal y Pago de Impuestos",
     title: "Soluciones Fiscales Integrales",
     description:
       "Optimizá el cumplimiento de tus obligaciones fiscales con nuestro servicio de gestión profesional de impuestos y pagos de servicios. Simplificamos la administración fiscal para que puedas concentrarte en hacer crecer tu negocio, sin complicaciones.",
-    imageUrl: "\logo-soluciones-fiscales.webp",
+    imageUrl: "logo-soluciones-fiscales.webp",
   },
   {
     supTitle: "Movimientos Financieros Flexibles",
     title: "Cash In / Cash Out",
     description:
       "Brindamos opciones ágiles para el manejo de efectivo, permitiendo el ingreso y retiro de fondos de forma segura y rápida. Ofrecemos soluciones flexibles que se adaptan a las necesidades financieras de tu empresa.",
-    imageUrl: "\logo-cashIn-cashOut.webp",
+    imageUrl: "logo-cashIn-cashOut.webp",
   },
   {
     supTitle: "Transferencias y Remesas Internacionales",
     title: "Movimiento Seguro de Fondos",
     description:
       "Garantizamos transferencias rápidas y seguras tanto a nivel nacional como internacional. Nuestra plataforma de remesas permite enviar y recibir dinero con total confianza y transparencia, asegurando que los fondos lleguen a destino sin contratiempos.",
-    imageUrl: "\logo-movimiento-seguro.webp",
+    imageUrl: "logo-movimiento-seguro.webp",
   },
   {
     supTitle: "Evaluación Crediticia y Scoring",
     title: "Bureau de Crédito Preciso",
     description:
       "Con nuestra avanzada tecnología de scoring, te ofrecemos evaluaciones crediticias precisas y detalladas. Esta información es clave para tomar decisiones financieras seguras y reducir riesgos en la concesión de créditos.",
-    imageUrl: "\logo-bureau-de-credito.webp",
+    imageUrl: "logo-bureau-de-credito.webp",
   },
   {
     supTitle: "Gestión de Identidad Digital",
     title: "Seguridad y Control de Acceso",
     description:
       "Protegemos la identidad digital de tus usuarios con sistemas robustos de verificación y gestión de identidad. Garantizamos que solo las personas autorizadas accedan a los servicios financieros de tu plataforma.",
-    imageUrl: "\logo-seguridad-control.webp",
+    imageUrl: "logo-seguridad-control.webp",
   },
   {
     supTitle: "RECARGAS",
     title: "Carga Fácil de Servicios y Créditos",
     description:
       "Ofrecemos soluciones para la recarga rápida y eficiente de servicios como telefonía móvil, entre otros. Nuestra plataforma facilita la gestión de estos procesos de manera simple y directa.",
-    imageUrl: "\logo-carga-facil.webp",
+    imageUrl: "logo-carga-facil.webp",
   },
 ];
 ---
 
 {
   CardArray.map(({ imageUrl, title, supTitle, description }) => (
-    <div class="card border rounded-xl border-blue-600 w-[380px] h-[550px]">
+    <div class="card border rounded-xl border-blue-600 w-[380px] h-[550px] max-[450px]:h-[600px]">
       <div class="p-6 flex justify-center items-center flex-col">
         <div class="flex justify-center items-center flex-col h-full">
           <h4 class="text-xl text-blue-600 font-medium">{supTitle}</h4>
-          <img class="py-16 w-[250px] h-[250px] object-contain" src={imageUrl} alt="" />
+          <img
+            class="py-16 w-[250px] h-[250px] object-contain"
+            src={imageUrl}
+            alt=""
+          />
         </div>
         <div class="flex justify-center items-center flex-col gap-2">
           <h3 class="text-3xl font-bold text-blue-600 leading-7">{title}</h3>
