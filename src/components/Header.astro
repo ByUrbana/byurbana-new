@@ -1,13 +1,16 @@
 <header class="fixed top-0 pt-8 z-40 w-full text-white">
-  <nav class="flex justify-between pl-36 pr-36 items-center w-full">
+  <nav class="flex justify-between px-36 items-center w-full max-[800px]:px-10">
     <div>
       <div>
         <div id="botttomburger" class="cursor-pointer">
           <img class="w-7" src="/navbar-icon.png" alt="Icono de navegacion" />
         </div>
-        <div id="menu" class=" bg-[#adc6fb] rounded-2xl justify-center items-center flex-col absolute hidden transform transition-all ">
+        <div
+          id="menu"
+          class="bg-[#adc6fb] rounded-2xl justify-center items-center flex-col absolute hidden transform transition-all"
+        >
           <ul
-            class="flex  gap-4 flex-col text-black relative p-10 w-[700px] h-[750px]"
+            class="flex gap-4 flex-col text-black relative p-10 w-[700px] h-[750px]"
           >
             <li><a class="text-7xl" href="/">Home</a></li>
             <li><a class="text-7xl" href="/servicios">Servicios</a></li>
@@ -15,8 +18,14 @@
             <li><a class="text-7xl" href="/superapp">Superapp</a></li>
             <li><a class="text-7xl" href="/contacto">Contacto</a></li>
           </ul>
-          <button id="bottom-close" class="absolute top-5 right-5 py-4 px-16 rounded-2xl border-black border text-black text-3xl font-medium">X</button>
-          <div class="flex justify-between w-full flex-row p-10 items-end absolute bottom-0 text-black text-lg">
+          <button
+            id="bottom-close"
+            class="absolute top-5 right-5 py-4 px-16 rounded-2xl border-black border text-black text-3xl font-medium"
+            >X</button
+          >
+          <div
+            class="flex justify-between w-full flex-row p-10 items-end absolute bottom-0 text-black text-lg"
+          >
             <div>
               <a class="border-b-4 border-black" href="">Instagram</a>
               <span>↗</span>
@@ -25,7 +34,9 @@
               <a class="border-b-4 border-black" href="">LinkedIn</a>
               <span>↗</span>
             </div>
-            <div class="flex justify-center items-center gap-0 flex-col text-sm font-medium">
+            <div
+              class="flex justify-center items-center gap-0 flex-col text-sm font-medium"
+            >
               <p>PRIVACY POLICY</p>
               <p>COOKIE POLICY</p>
               <p>WEBSITE TEM OF USE</p>
@@ -40,7 +51,8 @@
     >
     <a
       href="/contacto"
-      class="font-normal text-base border rounded-full pl-6 pr-6">CONTÁCTENOS</a
+      class="font-normal text-base border rounded-full pl-6 pr-6 max-[550px]:hidden"
+      >CONTÁCTENOS</a
     >
   </nav>
   <script>
