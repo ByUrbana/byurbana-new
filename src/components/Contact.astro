@@ -1,9 +1,25 @@
 <!-- CONTACT -->
 <section
-  class="flex justify-center items-center h-screen max-[1280px]:h-full bg-slate-950 text-white py-20"
+  class="flex justify-center items-center h-screen max-[1280px]:h-full bg-color-contact text-white py-20 relative overflow-hidden"
 >
+  <img
+    class="bg-animation bg-animation1 absolute top-0 left-0 h-[120vh] z-10 -translate-y-[6%] max-[1280px]:h-[140%] max-[1280px]:-translate-y-[10vh] max-[1280px]:-translate-x-[10vw] max-[1050px]:hidden"
+    src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+    alt=""
+  />
+  <img
+    class="bg-animation bg-animation2 absolute top-0 left-0 h-[120vh] z-10 -translate-y-[6%] max-[1280px]:h-[120%] max-[1280px]:-translate-y-[10vh] max-[1280px]:-translate-x-[20vw] max-[1050px]:hidden"
+    src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+    alt=""
+  />
+  <img
+    class="bg-animation bg-animation3 absolute top-0 left-0 h-[120vh] z-10 -translate-y-[6%] max-[1280px]:h-[120%] max-[1280px]:-translate-y-[10vh] max-[1280px]:-translate-x-[30vw] max-[1050px]:hidden"
+    src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+    alt=""
+  />
+
   <div
-    class="grid grid-cols-[1fr_2fr] max-[1280px]:justify-items-center max-[1280px]:grid-cols-1 max-[1280px]:gap-20 mx-32 max-[1440px]:mx-24 max-[500px]:mx-10"
+    class="z-20 grid grid-cols-[1fr_2fr] max-[1280px]:justify-items-center max-[1280px]:grid-cols-1 max-[1280px]:gap-20 mx-32 max-[1440px]:mx-24 max-[500px]:mx-10"
   >
     <div
       class="w-[600px] max-[1280px]:w-full max-[1280px]:border-0 border-x-2 border-gray-600 px-10 max-[1280px]:px-0"
@@ -54,3 +70,68 @@
     </p>
   </div>
 </section>
+
+<style>
+  .bg-color-contact {
+    background: rgb(4, 18, 38);
+    background: linear-gradient(
+      90deg,
+      rgba(4, 18, 38, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+  .bg-animation {
+    animation-name: bg-contact;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .bg-animation1 {
+    animation-name: bg-animation-contact1;
+  }
+  .bg-animation2 {
+    animation-name: bg-animation-contact2;
+  }
+  .bg-animation3 {
+    animation-name: bg-animation-contact3;
+  }
+  @keyframes bg-animation-contact1 {
+    0% {
+      left: -10vw;
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.2;
+    }
+    100% {
+      left: 50vw;
+      opacity: 0;
+    }
+  }
+  @keyframes bg-animation-contact2 {
+    0% {
+      left: -30vw;
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.2;
+    }
+    100% {
+      left: 30vw;
+      opacity: 0;
+    }
+  }
+  @keyframes bg-animation-contact3 {
+    0% {
+      left: -50vw;
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.2;
+    }
+    100% {
+      left: 10vw;
+      opacity: 0;
+    }
+  }
+</style>

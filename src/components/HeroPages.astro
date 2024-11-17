@@ -9,10 +9,10 @@ const { bgColor, title } = Astro.props;
 
 <section class="h-screen flex justify-center items-center">
   <div
-    class="grid grid-cols-[1fr_1.2fr] gap-10 px-8 max-[800px]:grid-cols-1 h-[80vh]"
+    class="grid grid-cols-[1fr_1.2fr] gap-10 px-8 max-[800px]:grid-cols-1 h-[80vh] max-[700px]:items-center"
   >
     <div
-      class={`bg-[${bgColor}] py- max-[770px]:py-10 px-20 rounded-3xl text-white flex justify-center items-center max-[800px]:hidde`}
+      class={`bg-[${bgColor}] py- max-[770px]:py-10 px-20 rounded-3xl text-white flex justify-center items-center max-[700px]:hidden`}
     >
       <img
         class="w-[10vw] max-[800px]:h-[30vh] object-contain"
@@ -31,7 +31,7 @@ const { bgColor, title } = Astro.props;
       />
     </div>
     <div
-      class="bg-white flex py-24 max-[770px]:py-10 px-20 rounded-3xl relative max-[800px]:w-[55vw] max-[800px]:h-[40vh]"
+      class="bg-white flex py-24 max-[770px]:py-10 px-20 rounded-3xl relative max-[800px]:w-[55vw] max-[800px]:h-[40vh] max-[700px]:h-2/3 max-[700px]:w-[80vw] "
     >
       <div
         class="absolute top-5 right-5 pt-16 pb-5 pl-5 pr-40 bg-blue-600 rounded-2xl max-[1000px]:pt-8 max-[1000px]:pb-2 max-[1000px]:pr-20"

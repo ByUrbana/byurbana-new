@@ -63,10 +63,10 @@ import Contact from "../components/Contact.astro";
       </video>
     </section>
     <section
-      class="bg-[#041226] h-screen justify-center items-center flex flex-col"
+      class="bg-[#041226] h-screen justify-center items-center flex flex-col hola"
     >
       <div
-        class="text-white flex justify-center items-center flex-col relative gap-10"
+        class="text-white flex justify-center items-center flex-col relative gap-10 "
       >
         <span class="text-sm font-medium tracking-widest"
           >BIENVENIDO A BY URBANA</span
@@ -89,33 +89,36 @@ import Contact from "../components/Contact.astro";
         </div>
       </div>
     </section>
-    <section class="flex flex-row h-screen overflow-hidden border-t">
-      -->
+    <section
+      class="flex flex-row h-screen overflow-hidden border-t max-[1100px]:flex-col max-[1100px]:h-full max-[1100px]:"
+    >
       <section class="relative bg-[#727375] z-30">
         <div
-          class="text-white w-[35vw] p-6 h-full top-0 left-0 flex justify-evenly items-start flex-col shadow-[2px_-3px_19px_0] shadow-[#adc6fb99]"
+          class="text-white w-[35vw] p-6 max-[1100px]:py-20 h-full top-0 left-0 flex justify-evenly max-[1100px]:justify-center max-[800px]:gap-8 max-[1100px]:w-full items-start flex-col max-[800px]:flex-col shadow-[2px_-3px_19px_0] shadow-[#adc6fb99] max-[1100px]:shadow-none max-[1100px]:flex-row max-[1100px]:items-center"
         >
           <div
-            class="text-blue-100 flex justify-center items-start flex-col gap-8 pl-24 max-[1440px]:pl-10"
+            class="text-blue-100 max-[1100px]:items-center max-[1100px]:pl-0 flex justify-center items-start flex-col gap-8 pl-24 max-[1440px]:pl-10 max-[1100px]:flex-row max-[800px]:flex-col"
           >
-            <h2 class="text-5xl max-[1440px]:text-4xl max-[1025px]:text-2xl">
+            <h2
+              class="text-5xl max-[1440px]:text-4xl max-[1025px]:text-2xl max-[800px]:max-w-[500px]"
+            >
               CREA ))) UN ECOSISTEMA FINANCIERO <span class="font-bold"
                 >ÚNICO</span
               > , DISEÑADO PARA OPTIMIZAR CADA TRANSACCION EN TU NEGOCIO
             </h2>
             <p
-              class="w-72 font-semibold text-lg max-[1025px]:text-base -tracking-wider"
+              class="w-72 max-[1100px]:w-full font-semibold text-lg max-[1025px]:text-base -tracking-wider max-[800px]:max-w-[500px]"
             >
               Simplifica tu negocio con soluciones financieras innovadoras que
               transforman la manera en que cobras y pagas.
             </p>
             <a
-              class="font-bold text-xl max-[1025px]:text-lg border-b-2 border-blue-200"
+              class="font-bold text-xl max-[1025px]:text-lg border-b-2 border-blue-200 text-nowrap"
               href="#">Contacte ahora ↗</a
             >
           </div>
           <div
-            class="flex flex-col justify-start items-start font-semibold pl-24 text-lg max-[1025px]:text-base leading-5"
+            class="flex flex-col justify-start items-start font-semibold pl-24 max-[1100px]:pl-10 text-lg max-[1025px]:text-base leading-5 max-[800px]:pl-0"
           >
             <p><span class="font-extrabold">SOMOS</span></p>
             <p>EMISORES</p>
@@ -125,28 +128,34 @@ import Contact from "../components/Contact.astro";
           </div>
         </div>
       </section>
-      <section class="bg-[#041226] w-full pl-32">
+      <section
+        class="bg-[#041226] w-full pl-32 max-[1100px]:pl-0 max-[1100px]:py-20"
+      >
         <div class="flex justify-center gap-24 items-center h-full">
           <div
-            class="card max-w-[500px] text-white relative overflow-hidden min-w-[30vw] max-[1025px]:min-w-[40vw] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
+            class="card max-w-[500px] max-[500px]:min-w-[350px] text-white relative overflow-hidden min-w-[30vw] max-[1100px]:h-[600px] max-[1100px]:min-w-[400px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
           >
-            <img
+            <video
               class="absolute h-full top-0 left-0 object-cover"
-              src="\cards.jpg"
-              alt=""
-            />
+              autoplay
+              muted
+              loop
+            >
+              <source src="/video1.mp4" type="video/mp4" />
+            </video>
             <span
               class="bg-[#04122675] absolute z-10 h-full w-full top-0 left-0 object-cover"
             ></span>
             <div class="flex justify-between items-start w-full z-20">
-              <h3 class="text-5xl max-[1025px]:text-3xl">
+              <h3 class="text-5xl max-[500px]:text-3xl">
                 SOMOS <br /><span class="font-semibold">EMISORES</span>
               </h3>
-              <span class="font-semibold text-5xl w-[1025px]:text-3xl">)))</span
+              <span class="font-semibold text-5xl max-[500px]:text-3xl"
+                >)))</span
               >
             </div>
             <p
-              class="text-lg max-[1025px]:text-base font-semibold w-72 z-20 leading-5"
+              class="text-lg font-semibold w-72 z-20 leading-5 max-[500px]:text-sm"
             >
               Desarrollamos <span class="font-extrabold"
                 >soluciones de pago personalizadas</span
@@ -156,53 +165,94 @@ import Contact from "../components/Contact.astro";
             </p>
           </div>
           <div
-            class="card text-white relative overflow-hidden w-[500px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
+            class="card max-w-[500px] max-[500px]:min-w-[350px] text-white relative overflow-hidden min-w-[30vw] max-[1100px]:h-[600px] max-[1100px]:min-w-[400px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
           >
-            <img
+            <video
               class="absolute h-full top-0 left-0 object-cover"
-              src="\cards.jpg"
-              alt=""
-            />
+              autoplay
+              muted
+              loop
+            >
+              <source src="/video2.mp4" type="video/mp4" />
+            </video>
             <span
               class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
             ></span>
             <div class="flex justify-between items-start w-full z-20">
-              <h3 class="text-5xl">
-                SOMOS <br /><span class="font-semibold">EMISORES</span>
+              <h3 class="text-5xl max-[500px]:text-3xl">
+                SOMOS <br /><span class="font-semibold">PROCESADORES</span>
               </h3>
-              <span class="font-semibold text-5xl">)))</span>
+              <span class="font-semibold text-5xl max-[500px]:text-3xl"
+                >)))</span
+              >
             </div>
-            <p class="text-lg font-semibold w-72 z-20 leading-5">
-              Desarrollamos <span class="font-extrabold"
-                >soluciones de pago personalizadas</span
-              > para empresas, ajustadas a tus necesidades, respaldadas por un compromiso
-              continuo con la innovación. Simplificamos y potenciamos tus transacciones
-              financieras.
+            <p
+              class="text-lg font-semibold w-72 z-20 leading-5 max-[500px]:text-sm"
+            >
+              Administramos <span class="font-extrabold"
+                >transacciones con estándares de seguridad y eficiencia líderes</span
+              > , asegurando la tranquilidad de nuestros clientes. Nuestra máxima
+              prioridad es la dedicación a la protección de tus operaciones financieras.
             </p>
           </div>
           <div
-            class="card text-white relative overflow-hidden w-[500px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
+            class="card max-w-[500px] max-[500px]:min-w-[350px] text-white relative overflow-hidden min-w-[30vw] max-[1100px]:h-[600px] max-[1100px]:min-w-[400px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
           >
-            <img
+            <video
               class="absolute h-full top-0 left-0 object-cover"
-              src="\cards.jpg"
-              alt=""
-            />
+              autoplay
+              muted
+              loop
+            >
+              <source src="/video3.mp4" type="video/mp4" />
+            </video>
             <span
               class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
             ></span>
             <div class="flex justify-between items-start w-full z-20">
-              <h3 class="text-5xl">
-                SOMOS <br /><span class="font-semibold">EMISORES</span>
+              <h3 class="text-5xl max-[500px]:text-3xl">
+                SOMOS <br /><span class="font-semibold"
+                  >GENERADORES DE PRODUCTOS</span
+                >
               </h3>
-              <span class="font-semibold text-5xl">)))</span>
+              <span class="text-5xl max-[500px]:text-3xl">)))</span>
             </div>
-            <p class="text-lg font-semibold w-72 z-20 leading-5">
-              Desarrollamos <span class="font-extrabold"
-                >soluciones de pago personalizadas</span
-              > para empresas, ajustadas a tus necesidades, respaldadas por un compromiso
-              continuo con la innovación. Simplificamos y potenciamos tus transacciones
-              financieras.
+            <p
+              class="text-lg font-semibold w-72 z-20 leading-5 max-[500px]:text-sm"
+            >
+              Desarrollamos soluciones de pago personalizadas para empresas,
+              ajustadas a tus necesidades, respaldadas por un compromiso
+              constante con la innovación. Simplificamos y potenciamos tus
+              transacciones financieras.
+            </p>
+          </div>
+          <div
+            class="card max-w-[500px] max-[500px]:min-w-[350px] text-white relative overflow-hidden min-w-[30vw] max-[1100px]:h-[600px] max-[1100px]:min-w-[400px] rounded-[40px] border p-10 border-blue-800 flex flex-col h-4/5 justify-between items-start"
+          >
+            <video
+              class="absolute h-full top-0 left-0 object-cover"
+              autoplay
+              muted
+              loop
+            >
+              <source src="/video4.mp4" type="video/mp4" />
+            </video>
+            <span
+              class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
+            ></span>
+            <div class="flex justify-between items-start w-full z-20">
+              <h3 class="text-5xl max-[500px]:text-3xl">
+                SOMOS <br /><span class="font-semibold">CONSULTORES</span>
+              </h3>
+              <span class="text-5xl max-[500px]:text-3xl">)))</span>
+            </div>
+            <p
+              class="text-lg font-semibold w-72 z-20 leading-5 max-[500px]:text-sm"
+            >
+              Brindamos <span class="font-extrabold"
+                >asesoramiento experto en pagos y finanzas,</span
+              > impulsando el éxito de nuestros clientes. Nuestro compromiso es ser
+              tu socio estratégico en cada paso del camino.
             </p>
           </div>
         </div>
@@ -264,4 +314,6 @@ import Contact from "../components/Contact.astro";
   </main>
 </Layout>
 
-<style></style>
+<style>
+
+</style>

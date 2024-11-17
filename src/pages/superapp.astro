@@ -10,16 +10,22 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
   <main class="bg-blue-600">
     <HeroPages title="SuperApp" bgColor="#cce8fa" />
     <Banner url="\superapp-bannner.webp" />
-    <section class="w-full flex justify-end items-center pb-32">
+    <section
+      class="w-full flex justify-end max-[1000px]:justify-center items-center pb-32"
+    >
       <div
-        class="w-[950px] flex justify-center items-center flex-col gap-7 pr-48 max-[1440px]:pr-28 max-[1440px]:w-[700px]"
+        class="w-[950px] flex justify-center items-center flex-col gap-7 pr-48 max-[1440px]:pr-28 max-[1440px]:w-[700px] max-[1000px]:px-10"
       >
-        <h3 class="text-5xl max-[1440px]:text-4xl text-blue-200 font-normal">
+        <h3
+          class="text-5xl max-[1440px]:text-4xl text-blue-200 font-normal max-[600px]:text-2xl"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           porta efficitur sagittis. Aenean ut elit auctor, lacinia arcu at,
           faucibus dui.
         </h3>
-        <p class="text-blue-200 text-2xl max-[1440px]:text-xl">
+        <p
+          class="text-blue-200 text-2xl max-[1440px]:text-xl max-[600px]:text-base"
+        >
           Nullam venenatis viverra fermentum. Nulla elementum faucibus nisi, et
           luctus nulla aliquet a. Integer id porttitor nibh. Donec dapibus
           convallis sollicitudin. Vivamus turpis libero, scelerisque ac congue
@@ -28,15 +34,19 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
       </div>
     </section>
     <section class="grid place-content-center w-full">
-      <div class="flex justify-center items-center flex-col gap-10 w-full">
+      <div class="flex justify-center items-center flex-col gap-10 w-full view">
         <div
-          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col"
+          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col views"
         >
-          <img
+          <video
             class="w-2/4 h-full object-cover rounded-3xl max-[800px]:hidden"
-            src="\superapp-poste.jpg"
-            alt=""
-          />
+            autoplay
+            muted
+            loop
+          >
+            <source src="/daraval-video.mp4" type="video/mp4" />
+          </video>
+
           <div
             class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-start flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-4/5"
           >
@@ -70,7 +80,7 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
           </div>
         </div>
         <div
-          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col"
+          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col views"
         >
           <div
             class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-start flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-4/5"
@@ -103,20 +113,26 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
               >
             </div>
           </div>
-          <img
+          <video
             class="w-2/4 h-full object-cover rounded-3xl max-[800px]:hidden"
-            src="\superapp-poste.jpg"
-            alt=""
-          />
+            autoplay
+            muted
+            loop
+          >
+            <source src="/urbanaGo-video.mp4" type="video/mp4" />
+          </video>
         </div>
         <div
-          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col"
+          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col views"
         >
-          <img
+          <video
             class="w-2/4 h-full object-cover rounded-3xl max-[800px]:hidden"
-            src="\superapp-poste.jpg"
-            alt=""
-          />
+            autoplay
+            muted
+            loop
+          >
+            <source src="/tableFast-video.mp4" type="video/mp4" />
+          </video>
           <div
             class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-start flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-4/5"
           >
@@ -149,7 +165,7 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
           </div>
         </div>
         <div
-          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col"
+          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col views"
         >
           <div
             class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-start flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-4/5"
@@ -182,20 +198,26 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
               >
             </div>
           </div>
-          <img
+          <video
             class="w-2/4 h-full object-cover rounded-3xl max-[800px]:hidden"
-            src="\superapp-poste.jpg"
-            alt=""
-          />
+            autoplay
+            muted
+            loop
+          >
+            <source src="/entradaMaster-video.mp4" type="video/mp4" />
+          </video>
         </div>
         <div
-          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col"
+          class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col views"
         >
-          <img
-            class="w-2/4 object-cover rounded-3xl h-[400px] max-[800px]:hidden"
-            src="\superapp-poste.jpg"
-            alt=""
-          />
+          <video
+            class="w-2/4 h-full object-cover rounded-3xl max-[800px]:hidden"
+            autoplay
+            muted
+            loop
+          >
+            <source src="/meQuieroMudar-video.mp4" type="video/mp4" />
+          </video>
           <div
             class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-start flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-4/5"
           >
@@ -251,3 +273,19 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
     <Contact />
   </main>
 </Layout>
+
+<style>
+  .views {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>

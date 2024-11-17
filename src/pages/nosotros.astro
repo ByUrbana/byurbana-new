@@ -3,6 +3,7 @@ import Contact from "../components/Contact.astro";
 import Layout from "../layouts/Layout.astro";
 import HeroPages from "../components/HeroPages.astro";
 import Banner from "../components/Banner.astro";
+import bannerVideo from "/banner-video.mp4";
 ---
 
 <Layout title="BYU_Nosotros">
@@ -11,13 +12,17 @@ import Banner from "../components/Banner.astro";
     <Banner url="\image-banner.webp" />
     <section class="w-full flex justify-end items-center pb-32">
       <div
-        class="w-[950px] flex justify-center items-center flex-col gap-7 pr-48 max-[1440px]:pr-28 max-[1440px]:w-[700px]"
+        class="w-[950px] flex justify-center items-center flex-col gap-7 pr-48 max-[1440px]:pr-28 max-[1440px]:w-[700px] max-[1000px]:px-10"
       >
-        <h3 class="text-5xl max-[1440px]:text-4xl text-blue-600 font-normal">
+        <h3
+          class="text-5xl max-[1440px]:text-4xl text-blue-600 font-normal max-[600px]:text-2xl"
+        >
           En ByUrbana, somos pioneros en la creación de soluciones digitales
           financieras adaptadas a las necesidades de cada empresa.
         </h3>
-        <p class="text-blue-600 text-2xl max-[1440px]:text-xl">
+        <p
+          class="text-blue-600 text-2xl max-[1440px]:text-xl max-[600px]:text-base"
+        >
           Nuestra misión es simplificar y potenciar los ecosistemas comerciales
           y financieros mediante herramientas personalizadas que te permitan
           operar con la eficiencia de un banco digital propio. Con un equipo de
@@ -89,12 +94,14 @@ import Banner from "../components/Banner.astro";
             <span
               class="bg-[#1a4c9c96] absolute top-0 left-0 z-20 w-full h-[75vh]"
             ></span>
-            <img
+            <video
               class="absolute w-full top-0 left-0 h-[75vh] z-10 object-cover"
-              src="\poster.jpg"
-              alt=""
-            />
-
+              autoplay
+              muted
+              loop
+            >
+              <source src={bannerVideo} type="video/mp4" />
+            </video>
             <div class="z-40 w-[700px] max-[1280px]:w-fit relative text-white">
               <span class="text-sm font-bold">NUESTRA DIFERENCIA DESTACADA</span
               >

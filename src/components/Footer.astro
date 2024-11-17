@@ -1,5 +1,5 @@
 <!-- FOOTER -->
-<footer class="py-20 flex justify-center flex-col bg-[#adc6fb]">
+<footer class="py-20 flex justify-center flex-col bg-[#adc6fb] cja">
   <div
     class="flex justify-evenly items-center flex-row gap-4 w-full px-5 max-[1100px]:items-start max-[500px]:items-center max-[1100px]:gap-14 max-[1100px]:pb-10 max-[500px]:flex-col"
   >
@@ -12,17 +12,17 @@
       <p class="text-xl">C1041 AAP, Buenos Aires. Argentina</p>
     </div>
     <div
-      class="flex justify-center max-[500px]:items-center items-start gap-14 max-[1380px]:gap-6 max-[1100px]:flex-col max-[1100px]:items-start"
+      class="flex justify-center max-[500px]:items-center items-start gap-14 max-[1380px]:gap-6 max-[1100px]:flex-col-reverse max-[1100px]:items-start"
     >
       <nav>
         <ul
           class="flex justify-center items-start flex-col max-[1100px]:flex-row max-[500px]:flex-col max-[1100px]:gap-6 max-[1100px]:justify-start max-[1000px]:gap-2 gap-2 flex-wrap"
         >
-          <li><a class="text-2xl" href="#">Home</a></li>
-          <li><a class="text-2xl" href="#">Servicios</a></li>
-          <li><a class="text-2xl" href="#">Beneficios</a></li>
-          <li><a class="text-2xl" href="#">Superapp</a></li>
-          <li><a class="text-2xl" href="#">Contacto</a></li>
+          <li><a class="text-2xl" href="/">Home</a></li>
+          <li><a class="text-2xl" href="/servicios">Servicios</a></li>
+          <li><a class="text-2xl" href="/nosotros">Nosotros</a></li>
+          <li><a class="text-2xl" href="/superapp">Superapp</a></li>
+          <li><a class="text-2xl" href="/contacto">Contacto</a></li>
         </ul>
       </nav>
       <nav>
@@ -55,7 +55,7 @@
     </div>
   </div>
   <div
-    class="flex justify-end items-center pr-32 max-[500px]:pr-5 max-[500px]:pl-5"
+    class="flex justify-end items-center pr-32 max-[800px]:pr-8 max-[800px]:pl-8"
   >
     <span class="font-semibold text-sm">2024 TODOS LOS DERECHOS RESERVADOS</span
     >
@@ -64,3 +64,13 @@
     >
   </div>
 </footer>
+
+<style>
+  .cja{
+    transition: 500ms all ;
+  }
+  .cja:hover{
+    filter: drop-shadow(rgba(173, 198, 251, 0.52) 2px -3px 19px);
+    transition: 500ms all ;
+  }
+</style>

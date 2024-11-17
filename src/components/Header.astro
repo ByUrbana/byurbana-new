@@ -1,30 +1,47 @@
-<header class="fixed top-0 pt-8 z-40 w-full text-white">
+<header class="fixed top-0 pt-8 z-50 w-full text-white">
   <nav class="flex justify-between px-36 items-center w-full max-[800px]:px-10">
     <div>
       <div>
-        <div id="botttomburger" class="cursor-pointer">
+        <div id="openNavbar" class="cursor-pointer">
           <img class="w-7" src="/navbar-icon.png" alt="Icono de navegacion" />
         </div>
+
         <div
           id="menu"
           class="bg-[#adc6fb] rounded-2xl justify-center items-center flex-col absolute hidden transform transition-all"
         >
           <ul
-            class="flex gap-4 flex-col text-black relative p-10 w-[700px] h-[750px]"
+            class="flex gap-4 flex-col text-black relative p-10 w-[700px] h-[750px] max-[1000px]:w-[500px] max-[1000px]:h-[550px] max-[550px]:w-[90vw] max-[550px]:h-[80vh]"
           >
-            <li><a class="text-7xl" href="/">Home</a></li>
-            <li><a class="text-7xl" href="/servicios">Servicios</a></li>
-            <li><a class="text-7xl" href="/nosotros">Nosotros</a></li>
-            <li><a class="text-7xl" href="/superapp">Superapp</a></li>
-            <li><a class="text-7xl" href="/contacto">Contacto</a></li>
+            <li><a class="text-7xl max-[1000px]:text-5xl" href="/">Home</a></li>
+            <li>
+              <a class="text-7xl max-[1000px]:text-5xl" href="/servicios"
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a class="text-7xl max-[1000px]:text-5xl" href="/nosotros"
+                >Nosotros</a
+              >
+            </li>
+            <li>
+              <a class="text-7xl max-[1000px]:text-5xl" href="/superapp"
+                >Superapp</a
+              >
+            </li>
+            <li>
+              <a class="text-7xl max-[1000px]:text-5xl" href="/contacto"
+                >Contacto</a
+              >
+            </li>
           </ul>
           <button
             id="bottom-close"
-            class="absolute top-5 right-5 py-4 px-16 rounded-2xl border-black border text-black text-3xl font-medium"
+            class="absolute top-5 right-5 py-4 px-16 rounded-2xl border-black border text-black text-3xl font-medium max-[1000px]:px-8 max-[1000px]:py-2"
             >X</button
           >
           <div
-            class="flex justify-between w-full flex-row p-10 items-end absolute bottom-0 text-black text-lg"
+            class="flex justify-between w-full flex-row p-10 items-end absolute bottom-0 text-black text-lg max-[550px]:flex-col max-[550px]:gap-5 max-[550px]:items-center max-[550px]:pt-20"
           >
             <div>
               <a class="border-b-4 border-black" href="">Instagram</a>
@@ -46,7 +63,7 @@
         </div>
       </div>
     </div>
-    <a href="/#" class="font-medium text-2xl"
+    <a href="/" class="font-medium text-2xl"
       >BY <span class="font-semibold tracking-tighter"> ))) </span> URBANA</a
     >
     <a
@@ -56,32 +73,77 @@
     >
   </nav>
   <script>
-    let menu = document.getElementById("menu");
-    let botttomburger = document.getElementById("botttomburger");
-    let botttomclose = document.getElementById("bottom-close");
+    const menu = document.querySelector("#menu");
+    const openNavbar = document.querySelector("#openNavbar");
+    const closeNavbar = document.querySelector("#bottom-close");
 
-    botttomburger?.addEventListener("click", () => {
-      if (menu?.classList.contains("flex1")) {
-        menu?.classList.remove("flex1");
-        console.log("first");
-      } else {
-        menu?.classList.add("flex1");
-      }
+    openNavbar?.addEventListener("click", () => {
+      openModal();
     });
+    closeNavbar?.addEventListener("click", () => {
+      closeModal();
+    });
+    function openModal() {
+      showAndHide(menu, ["flex1", "scaleIn"], ["hidden", "scaleOut"]);
+    }
 
-    botttomclose?.addEventListener("click", () => {
-      if (menu?.classList.contains("flex1")) {
-        menu?.classList.remove("flex1");
-        console.log("first");
-      } else {
-        menu?.classList.add("flex1");
-      }
-    });
+    function closeModal() {
+      showAndHide(menu, ["scaleOut"], ["scaleIn"]);
+      setTimeout(() => {
+        showAndHide(menu, ["hidden"], ["flex1"]);
+      }, 300);
+    }
+
+    function showAndHide(
+      element: Element | null,
+      classesToAdd: string[],
+      classesToRemove: string[]
+    ) {
+      element?.classList.remove(...classesToRemove);
+      element?.classList.add(...classesToAdd);
+    }
   </script>
 </header>
 
 <style>
   .flex1 {
     display: flex;
+  }
+  .scaleIn {
+    animation: scaleIn 0.25s ease forwards;
+    animation-iteration-count: 1;
+  }
+  .scaleOut {
+    animation: scaleOut 0.25s ease-in forwards;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes scaleIn {
+    0% {
+      scale: 0.8;
+    }
+    90% {
+      scale: 1.01;
+    }
+    98% {
+      scale: 0.99;
+    }
+    100% {
+      scale: 1;
+    }
+  }
+
+  @keyframes scaleOut {
+    0% {
+      scale: 1.01;
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      scale: 0;
+      opacity: 0;
+    }
   }
 </style>
