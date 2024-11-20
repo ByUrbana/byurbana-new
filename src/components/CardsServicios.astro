@@ -64,7 +64,9 @@ const CardArray = [
     <div class="card border rounded-xl border-blue-600 w-[380px] h-[550px] max-[450px]:h-[600px]">
       <div class="p-6 flex justify-center items-center flex-col">
         <div class="flex justify-center items-center flex-col h-full">
-          <h4 class="text-xl text-blue-600 font-medium">{supTitle}</h4>
+          <h4 class="text-xl text-blue-600 font-medium uppercase">
+            {supTitle}
+          </h4>
           <img
             class="py-16 w-[250px] h-[250px] object-contain"
             src={imageUrl}
@@ -72,8 +74,10 @@ const CardArray = [
           />
         </div>
         <div class="flex justify-center items-center flex-col gap-2">
-          <h3 class="text-3xl font-bold text-blue-600 leading-7">{title}</h3>
-          <p class="text-xs text-gray-600 font-medium">{description}</p>
+          <h3 class="text-3xl font-bold text-blue-600 leading-7 pb-2">
+            {title}
+          </h3>
+          <p class="text-xs text-[#727375] font-medium">{description}</p>
         </div>
       </div>
     </div>
