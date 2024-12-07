@@ -7,9 +7,9 @@ interface Props {
 const { bgColor, title } = Astro.props;
 ---
 
-<section class="h-screen flex justify-center items-center">
+<section class="h-screen max-[800px]:h-fit flex justify-center items-center">
   <div
-    class="grid grid-cols-[1fr_1.2fr] gap-10 px-8 max-[800px]:grid-cols-1 h-[80vh] max-[700px]:items-center"
+    class="grid grid-cols-[1fr_1.2fr] gap-10 px-8 max-[800px]:grid-cols-1 h-[80vh] max-[700px]:items-center max-[700px]:px-0"
   >
     <div
       class={`bg-[${bgColor}] py- max-[770px]:py-10 px-20 rounded-3xl text-white flex justify-center items-center max-[700px]:hidden`}
@@ -31,20 +31,20 @@ const { bgColor, title } = Astro.props;
       />
     </div>
     <div
-      class="bg-white flex py-24 max-[770px]:py-10 px-20 rounded-3xl relative max-[800px]:w-[55vw] max-[800px]:h-[40vh] max-[700px]:h-2/3 max-[700px]:w-[80vw]"
+      class="bg-white flex py-24 max-[770px]:py-10 px-20 rounded-3xl relative max-[800px]:w-[55vw] max-[800px]:h-[40vh] max-[700px]:h-4/5 max-[700px]:w-[90vw] max-[700px]:rounded-2xl"
     >
       <div
-        class="absolute top-5 right-5 pt-16 pb-5 pl-5 pr-40 bg-blue-600 rounded-2xl max-[1000px]:pt-8 max-[1000px]:pb-2 max-[1000px]:pr-20"
+        class="absolute top-5 max-[1000px]:top-3 max-[1000px]:right-3 right-5 pt-16 max-[1000px]:pt-14 pb-5 max-[1000px]:pb-2 pl-5 pr-40 max-[1000px]:pr-24 bg-blue-600 rounded-2xl max-[1000px]:rounded-xl"
       >
         <a
           href="/"
-          class="text-blue-100 border-b-2 font-bold text-lg max-[1000px]:text-base"
+          class="text-blue-100 border-b-2 font-CoFoBold text-lg max-[1000px]:text-base max-[800px]:text-sm"
           >↖ regresar al Home</a
         >
       </div>
 
       <h2
-        class="text-9xl max-xl:text-8xl text-blue-600 absolute left-0 bottom-0 p-10 font-bold max-[1000px]:text-7xl max-[700px]:text-5xl"
+        class="text-9xl max-xl:text-8xl text-blue-600 absolute left-0 bottom-0 p-10 font-CoFoBold max-[1000px]:text-7xl max-[700px]:text-6xl max-[700px]:p-5 max-[700px]:pr-0"
       >
         {title}
       </h2>

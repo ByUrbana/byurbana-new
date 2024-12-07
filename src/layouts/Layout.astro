@@ -13,21 +13,49 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<Header/>
-		<slot />
-		<Footer/>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="font-CoFoNormal">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 </html>
 <style is:global>
+  @font-face {
+    font-family: "CoFo Sans Normal";
+    src: url("/font/CoFoSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "CoFo-Sans-Bold";
+    src: url("/font/CoFoSans-Bold.ttf") format("truetype");
+    font-style: bold;
+    font-display: swap;
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "CoFo Sans Medium";
+    src: url("/font/CoFoSans-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "CoFo Sans Black";
+    src: url("/font/CoFoSans-Black.ttf") format("truetype");
+    font-style: bold;
+    font-display: swap;
+    font-weight: bold;
+  }
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
