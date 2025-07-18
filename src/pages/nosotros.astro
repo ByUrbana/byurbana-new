@@ -20,7 +20,7 @@ import bannerVideo from "/banner-video.mp4";
           En By Urbana, somos pioneros en la creación de soluciones tecnológicas
           de medios de pago adaptadas a las necesidades de cada empresa.
         </h3>
-        <p
+        <!-- <p
           class="text-blue-600 text-2xl max-[1440px]:text-xl max-[600px]:text-base"
         >
           Nuestra misión es simplificar y potenciar los ecosistemas comerciales
@@ -30,7 +30,32 @@ import bannerVideo from "/banner-video.mp4";
             >Estamos comprometidos en ayudarte a alcanzar tus objetivos con
             innovación, seguridad y rentabilidad.</span
           >
-        </p>
+        </p> -->
+        <div
+          class="flex justify-between items-center gap-10 text-2xl max-[1440px]:text-xl max-[600px]:text-base"
+        >
+          <div
+            class="bg-white rounded-full w-44 h-44 flex justify-center items-center"
+          >
+            <p class="font-CoFoMedium">
+              <span class="text-blue-600 text-3xl">+</span> ÁGIL
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-full w-44 h-44 flex justify-center items-center"
+          >
+            <p class="font-CoFoMedium">
+              <span class="text-blue-600 text-3xl">+</span> SEGURA
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-full w-44 h-44 flex justify-center items-center"
+          >
+            <p class="font-CoFoMedium">
+              <span class="text-blue-600 text-3xl">+</span> SIMPLE
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section>
@@ -53,11 +78,9 @@ import bannerVideo from "/banner-video.mp4";
             <p
               class="text-4xl max-[1700px]:text-3xl max-[1470px]:text-2xl max-[1280px]:text-xl max-[600px]:text-lg font-CoFoMedium max-[500px]:leading-6 max-[450px]:text-sm"
             >
-              Queremos ser líderes en el mercado Fintech-Insurtech satisfaciendo
-              las necesidades financieras digitales de nuestros clientes y
-              contribuyendo a alcanzar el éxito del ecosistema de cobros y
-              pagos. Elevamos continuamente el nivel de la experiencia mediante
-              la optimización de los recursos y la tecnología.
+              Satisfacer las necesidades financieras digitales de nuestros
+              clientes, contribuyendo al alcance del éxito con nuestros
+              ecosistemas de cobros y pagos.
             </p>
           </div>
         </div>
@@ -77,9 +100,11 @@ import bannerVideo from "/banner-video.mp4";
             <p
               class="text-4xl max-[1700px]:text-3xl max-[1470px]:text-2xl max-[1280px]:text-xl max-[600px]:text-lg font-CoFoMedium max-[500px]:leading-6 max-[450px]:text-sm"
             >
-              Ofrecer una solución que integre los pagos y cobros de los
-              clientes y proveedores, dándole valor a tu negocio combinando
-              innovación, flexibilidad y seguridad.
+              Como empresa tecnológica y financiera creemos en el progreso
+              constante y la innovación. Por eso, estamos elevando continuamente
+              el nivel de nuestros productos mediante la optimización de
+              recursos tecnológicos, facilitando la experiencia de nuestros
+              clientes y sus usuarios.
             </p>
           </div>
         </div>
@@ -100,21 +125,82 @@ import bannerVideo from "/banner-video.mp4";
             >
               <source src={bannerVideo} type="video/mp4" />
             </video>
-            <div class="z-40 w-[700px] max-[1280px]:w-fit relative text-white">
-              <span class="text-sm font-normal tracking-widest"
-                >NUESTRA DIFERENCIA DESTACADA</span
-              >
+            <div
+              class="z-40 w-[700px] max-[1280px]:w-fit relative text-white flex justify-evenly items-center flex-col gap-5"
+            >
               <h2 class="text-7xl max-[1000px]:text-5xl max-[500px]:text-4xl">
-                <span class="font-bold"
-                  >EXCELENCIA <br /> INTERNACIONAL & <br /></span
+                <span class="text-sm font-normal tracking-widest"
+                  >CONFÍAN EN NOSOTROS:</span
                 >
-                ))) VELOCIDAD ))) DE <br /> IMPLEMENTACIÓN
+                <span class="font-bold"
+                  >FARMACLOUD, TRIUNFO SEGUROS, CIPAY, CALF.</span
+                >
               </h2>
+              <p class="text-2xl">
+                Desarrollamos una billetera con un modelo específico para cada
+                uno de nuestros clientes, atendiendo sus particularidades.
+              </p>
             </div>
           </div>
           <div
-            class="w-full h-[57vh] max-[800px]:h-full max-[800px]:py-20 bg-blue-600 text-white flex justify-end max-[1280px]:justify-center items-center"
+            class="w-full h-[57vh] max-[800px]:h-full max-[800px]:py-20 bg-blue-600 text-white flex justify-evenly max-[1280px]:justify-center items-center"
           >
+            <div
+              class="relative w-[450px] h-[350px] max-[1000px]:w-full max-[1000px]:h-full flex justify-center items-center"
+            >
+              <span class="bg-blue-600/15 absolute z-10 w-full h-full"></span>
+              <img
+                class="absolute top-0 left-0 h-full w-full object-cover z-0"
+                src="/foto.jpg"
+                alt=""
+              />
+              <div
+                class="flex justify-center items-center flex-col gap-5 w-full h-full"
+              >
+                <div
+                  class="z-20 w-full flex justify-center items-center flex-row font-semibold text-lg"
+                >
+                  <div
+                    class="bg-blue-600 py-4 w-40 rounded-2xl translate-x-7 flex justify-center items-center"
+                  >
+                    <span class="text-lg">2.500M</span>
+                  </div>
+                  <div
+                    class="bg-white py-4 w-64 flex justify-center items-center rounded-2xl text-blue-600 z-10"
+                  >
+                    <h3 class="text-lg">TRANSACCIONES</h3>
+                  </div>
+                </div>
+                <div
+                  class="z-20 top-0 left-0 w-full h-ful flex justify-center items-center flex-row font-semibold text-lg"
+                >
+                  <div
+                    class="bg-blue-600 py-4 w-40 rounded-2xl translate-x-7 flex justify-center items-center"
+                  >
+                    <span class="text-lg">18M</span>
+                  </div>
+                  <div
+                    class="bg-white py-4 w-64 flex justify-center items-center rounded-2xl text-blue-600 z-10"
+                  >
+                    <h3 class="text-lg">TARJETAS PROCESADAS</h3>
+                  </div>
+                </div>
+                <div
+                  class="z-20 top-0 left-0 w-full flex justify-center items-center flex-row font-semibold text-lg"
+                >
+                  <div
+                    class="bg-blue-600 py-4 w-40 rounded-2xl translate-x-7 flex justify-center items-center"
+                  >
+                    <span class="text-lg">+9.000M</span>
+                  </div>
+                  <div
+                    class="bg-white py-4 w-64 flex justify-center items-center rounded-2xl text-blue-600 z-10"
+                  >
+                    <h3 class="text-lg">USD EN CONSUMO</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div
               class="flex justify-center items-center gap-10 flex-col w-[900px] max-[1000px]:w-full max-[1000px]:pr-10 max-[1000px]:pl-10 pr-36 max-[1280px]:pr-10 text-blue-200"
             >
@@ -122,14 +208,13 @@ import bannerVideo from "/banner-video.mp4";
                 Nuestra presencia internacional nos distingue
               </h3>
               <p class="text-2xl font-medium max-[800px]:text-xl">
-                Nuestra excelencia en estándares y 'time to market', nos
-                permiten realizar proyectos que cumplan con tus tiempos. Juntos
-                innovamos en la industria de los métodos de pago.
+                Como partners de Credencial Payments, estamos respaldados por
+                certificaciones internacionales. Operamos con licencias activas
+                en múltiples países de la región.
               </p>
               <p class="text-2xl font-medium max-[800px]:text-xl">
-                Como partners de Credencial Payments, estamos respaldados por
-                certificaciones en 14 países, lo que nos convierte en la mejor
-                opción para tu negocio.
+                Ofrecemos nuestro servicios en 12 países y contamos con +45 años
+                de experiencia. Somos sin duda, la mejor opción para tu negocio.
               </p>
             </div>
           </div>

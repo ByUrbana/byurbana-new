@@ -1,16 +1,63 @@
 ---
 import Contact from "../components/Contact.astro";
 import Layout from "../layouts/Layout.astro";
-import HeroPages from "../components/HeroPages.astro";
 import Banner from "../components/Banner.astro";
-import CardsSuperarpp from "../components/CardsSuperarpp.astro";
 ---
 
 <Layout title="BYU_SuperApp">
   <main class="bg-blue-600">
-    <HeroPages title="SuperApp" bgColor="#cce8fa" />
-    <Banner url="\superapp-bannner.webp" />
     <section
+      class="h-screen max-[800px]:h-fit flex justify-center items-center"
+    >
+      <div
+        class="grid grid-cols-[1fr_1.2fr] gap-10 px-8 max-[800px]:grid-cols-1 h-[80vh] max-[700px]:items-center max-[700px]:px-0"
+      >
+        <div
+          class={`bg-[#cce8fa] py- max-[770px]:py-10 px-20 rounded-3xl text-white flex justify-center items-center max-[700px]:hidden`}
+        >
+          <img
+            class="w-[10vw] max-[800px]:h-[30vh] object-contain"
+            src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+            alt=""
+          />
+          <img
+            class="w-[10vw] max-[800px]:h-[30vh] object-contain"
+            src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+            alt=""
+          />
+          <img
+            class="w-[10vw] max-[800px]:h-[30vh] object-contain"
+            src="\image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+            alt=""
+          />
+        </div>
+        <div
+          class="bg-white flex py-24 max-[770px]:py-10 px-20 rounded-3xl relative max-[800px]:w-[55vw] max-[800px]:h-[40vh] max-[700px]:h-4/5 max-[700px]:w-[90vw] max-[700px]:rounded-2xl"
+        >
+          <div
+            class="absolute top-5 max-[1000px]:top-3 max-[1000px]:right-3 right-5 pt-16 max-[1000px]:pt-14 pb-5 max-[1000px]:pb-2 pl-5 pr-40 max-[1000px]:pr-24 bg-blue-600 rounded-2xl max-[1000px]:rounded-xl"
+          >
+            <a
+              href="/"
+              class="text-blue-100 border-b-2 font-CoFoBold text-lg max-[1000px]:text-base max-[800px]:text-sm"
+              >↖ regresar al Home</a
+            >
+          </div>
+
+          <h2
+            class="text-7xl max-xl:text-6xl text-blue-600 absolute left-0 bottom-0 p-10 font-CoFoBold max-[1000px]:text-5xl max-[700px]:text-4xl max-[700px]:p-5 max-[700px]:pr-0"
+          >
+            Algunos de nuestros modelos <br />
+            <span
+              class="text-2xl max-xl:text-xl max-[1000px]:text-base pt-10 text-gray-400"
+              >ARMÁ EL TUYO COMO QUIERAS</span
+            >
+          </h2>
+        </div>
+      </div>
+    </section>
+    <Banner url="\superapp-bannner.webp" />
+    <!-- <section
       class="w-full flex justify-end max-[1280px]:justify-center items-center pb-32"
     >
       <div
@@ -31,7 +78,7 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
           un tap.
         </p>
       </div>
-    </section>
+    </section> -->
     <section class="grid place-content-center w-full pb-28">
       <div class="flex justify-center items-center flex-col gap-10 w-full view">
         <div
@@ -47,9 +94,9 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
           </video>
 
           <div
-            class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-start flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-[90vw]"
+            class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-center flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-[90vw]"
           >
-            <h2
+            <!-- <h2
               class="text-6xl max-[1500px]:text-5xl max-[900px]:text-4xl max-[450px]:text-3xl"
             >
               <span class="text-blue-600">DAR</span><span class="text-gray-600"
@@ -69,16 +116,49 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
               integral, desde la aprobación de tu garantía hasta la finalización
               del contrato, asegurándonos de que estés informado en cada paso.
               Simplificamos tu acceso a garantías con eficiencia y seguridad.
-            </p>
+            </p> -->
+            <div class="flex justify-center items-start flex-col gap-5">
+              <h2 class="text-5xl text-blue-600 font-CoFoMedium">
+                MODELO INSURTECH
+              </h2>
+              <ul class="flex justify-center items-start flex-col gap-3">
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> pago de pólizas
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Acceso al ecosistema
+                  de mundo urbana
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Pago a colaboradores.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Disperción de
+                  fondos.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Monitoreo de
+                  gastos y movimientos.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Reporte financieros
+                  mensuales.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Rebulneración
+                  de dinero en cuenta.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div
           class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col-reverse views"
         >
           <div
-            class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-start flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-[90vw]"
+            class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-center flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-[90vw]"
           >
-            <h2
+            <!-- <h2
               class="text-6xl max-[1500px]:text-5xl max-[900px]:text-4xl max-[450px]:text-3xl"
             >
               <span class="text-blue-600">URBANA</span><span
@@ -98,7 +178,42 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
               gratuita; UrbanaKids: contenido infantil seguro; y UrbanaMúsica:
               disfruta de tu música y videos favoritos estés donde estés.
               UrbanaGo es entretenimiento sin límites, siempre a tu alcance.
-            </p>
+            </p> -->
+            <div class="flex justify-center items-start flex-col gap-5">
+              <h2 class="text-5xl text-blue-600 font-CoFoMedium">
+                MODELO EMPRESA
+              </h2>
+              <ul class="flex justify-center items-start flex-col gap-3">
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Digitalización
+                  de la economía de las empresas
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Acceso al ecosistema
+                  de mundo urbana
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Pago a colaboradores
+                  y disperción de fondos.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Monitoreo de
+                  gastos.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Entrega de gift
+                  cards.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Reporte financieros
+                  mensuales.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Parametrización
+                  para gastos en rubros especificos.
+                </li>
+              </ul>
+            </div>
           </div>
           <video
             class="w-2/4 h-full object-cover rounded-3xl max-[800px]:w-[90vw]"
@@ -121,9 +236,9 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
             <source src="/tableFast-video.mp4" type="video/mp4" />
           </video>
           <div
-            class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-start flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-[90vw]"
+            class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-center flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-[90vw]"
           >
-            <h2
+            <!-- <h2
               class="text-6xl max-[1500px]:text-5xl max-[900px]:text-4xl max-[450px]:text-3xl"
             >
               <span class="text-blue-600">TABLE</span><span
@@ -142,14 +257,49 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
               mundo gastronómico, facilitando una nueva modalidad de atención en
               restaurantes. Agilizamos el servicio y mejoramos la experiencia
               del cliente, todo con un simple escaneo.
-            </p>
+            </p> -->
+            <div class="flex justify-center items-start flex-col gap-5">
+              <h2 class="text-5xl text-blue-600 font-CoFoMedium">
+                MODELO COOPERATIVA
+              </h2>
+              <ul class="flex justify-center items-start flex-col gap-3">
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Posibilidad
+                  de diferir los pagos en cuotas hasta 36 meses.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Simulación de
+                  planes de cuotas.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Reportes financieros
+                  mensuales.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Parametrización
+                  para gastos en rubros especificos.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Transferencias
+                  Card to Card entre usuarios de la misma billetera
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Reporte financieros
+                  mensuales.
+                </li>
+                <li class="text-gray-600 text-lg">
+                  <span class="text-blue-600 font-semibold">⭢</span> Parametrizacion
+                  para gastos en rubros especificos.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div
+        <!-- <div
           class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col-reverse views"
         >
           <div
-            class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-start flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-[90vw]"
+            class="relative bg-white w-full rounded-3xl h-full px-10 max-[450px]:px-5 py-5 flex justify-center items-center flex-col gap-5 max-[1280px]:w-2/4 max-[800px]:w-[90vw]"
           >
             <h2
               class="text-6xl max-[1500px]:text-5xl max-[900px]:text-4xl max-[450px]:text-3xl"
@@ -179,10 +329,10 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
             muted
             loop
           >
-            <source src="/entradaMaster-video.mp4" type="video/mp4" />
+            <source src="/meQuieroMudar-video.mp4" type="video/mp4" />
           </video>
-        </div>
-        <div
+        </div> -->
+        <!-- <div
           class="flex justify-center items-center flex-row w-4/5 max-[1280px]:w-full max-[1280px]:flex-col views"
         >
           <video
@@ -218,7 +368,7 @@ import CardsSuperarpp from "../components/CardsSuperarpp.astro";
               paso, haciendo que tu nueva vida comience sin complicaciones.
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- <section class="pb-28 pt-20 flex justify-center items-center">
