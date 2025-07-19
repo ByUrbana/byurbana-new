@@ -32,7 +32,7 @@ import bannerVideo from "/banner-video.mp4";
           >
         </p> -->
         <div
-          class="flex justify-between items-center gap-10 text-2xl max-[1440px]:text-xl max-[600px]:text-base"
+          class="flex justify-between items-center gap-10 text-2xl max-[1440px]:text-xl max-[800px]:flex-col max-[600px]:text-base"
         >
           <div
             class="bg-white rounded-full w-44 h-44 flex justify-center items-center"
@@ -126,14 +126,14 @@ import bannerVideo from "/banner-video.mp4";
               <source src={bannerVideo} type="video/mp4" />
             </video>
             <div
-              class="z-40 w-[700px] max-[1280px]:w-fit relative text-white flex justify-evenly items-center flex-col gap-5"
+              class="z-40 w-[700px] max-[1280px]:w-fit relative text-white flex justify-evenly items-start flex-col gap-5"
             >
+              <span class="text-sm font-normal tracking-widest"
+                >CONFÍAN EN NOSOTROS:</span
+              >
               <h2 class="text-7xl max-[1000px]:text-5xl max-[500px]:text-4xl">
-                <span class="text-sm font-normal tracking-widest"
-                  >CONFÍAN EN NOSOTROS:</span
-                >
                 <span class="font-bold"
-                  >FARMACLOUD, TRIUNFO SEGUROS, CIPAY, CALF.</span
+                  >FARMACLOUD, TRIUNFO SEGUROS, CPAY, CALF.</span
                 >
               </h2>
               <p class="text-2xl">
@@ -143,10 +143,10 @@ import bannerVideo from "/banner-video.mp4";
             </div>
           </div>
           <div
-            class="w-full h-[57vh] max-[800px]:h-full max-[800px]:py-20 bg-blue-600 text-white flex justify-evenly max-[1280px]:justify-center items-center"
+            class="w-full h-[57vh] max-[1000px]:h-full max-[1000px]:py-20 max-[1000px]:flex-col bg-blue-600 text-white flex justify-evenly max-[1280px]:justify-center items-center gap-10"
           >
             <div
-              class="relative w-[450px] h-[350px] max-[1000px]:w-full max-[1000px]:h-full flex justify-center items-center"
+              class="relative w-[450px] h-[350px] max-[1000px]:w-4/5 max-[1000px]:h-80 flex justify-center items-center ml-20 max-[1000px]:ml-0"
             >
               <span class="bg-blue-600/15 absolute z-10 w-full h-full"></span>
               <img
@@ -155,7 +155,7 @@ import bannerVideo from "/banner-video.mp4";
                 alt=""
               />
               <div
-                class="flex justify-center items-center flex-col gap-5 w-full h-full"
+                class="flex justify-center items-center flex-col gap-5 w-full h-full pr-5"
               >
                 <div
                   class="z-20 w-full flex justify-center items-center flex-row font-semibold text-lg"
@@ -163,12 +163,17 @@ import bannerVideo from "/banner-video.mp4";
                   <div
                     class="bg-blue-600 py-4 w-40 rounded-2xl translate-x-7 flex justify-center items-center"
                   >
-                    <span class="text-lg">2.500M</span>
+                    <span
+                      class="text-lg max-[800px]:text-sm max-[400px]:text-xs"
+                      >2.500M</span
+                    >
                   </div>
                   <div
-                    class="bg-white py-4 w-64 flex justify-center items-center rounded-2xl text-blue-600 z-10"
+                    class="bg-white py-4 w-64 max-[500px]:w-52 flex justify-center items-center rounded-2xl text-blue-600 z-10"
                   >
-                    <h3 class="text-lg">TRANSACCIONES</h3>
+                    <h3 class="text-lg max-[800px]:text-sm max-[400px]:text-xs">
+                      TRANSACCIONES
+                    </h3>
                   </div>
                 </div>
                 <div
@@ -177,12 +182,19 @@ import bannerVideo from "/banner-video.mp4";
                   <div
                     class="bg-blue-600 py-4 w-40 rounded-2xl translate-x-7 flex justify-center items-center"
                   >
-                    <span class="text-lg">18M</span>
+                    <span
+                      class="text-lg max-[800px]:text-sm max-[400px]:text-xs"
+                      >18M</span
+                    >
                   </div>
                   <div
-                    class="bg-white py-4 w-64 flex justify-center items-center rounded-2xl text-blue-600 z-10"
+                    class="bg-white py-4 w-64 max-[500px]:w-52 flex justify-center items-center rounded-2xl text-blue-600 z-10"
                   >
-                    <h3 class="text-lg">TARJETAS PROCESADAS</h3>
+                    <h3
+                      class="text-lg text-nowrap max-[800px]:text-sm max-[400px]:text-xs"
+                    >
+                      TARJETAS PROCESADAS
+                    </h3>
                   </div>
                 </div>
                 <div
@@ -191,12 +203,17 @@ import bannerVideo from "/banner-video.mp4";
                   <div
                     class="bg-blue-600 py-4 w-40 rounded-2xl translate-x-7 flex justify-center items-center"
                   >
-                    <span class="text-lg">+9.000M</span>
+                    <span
+                      class="text-lg max-[800px]:text-sm max-[400px]:text-xs"
+                      >+9.000M</span
+                    >
                   </div>
                   <div
-                    class="bg-white py-4 w-64 flex justify-center items-center rounded-2xl text-blue-600 z-10"
+                    class="bg-white py-4 w-64 max-[500px]:w-52 flex justify-center items-center rounded-2xl text-blue-600 z-10"
                   >
-                    <h3 class="text-lg">USD EN CONSUMO</h3>
+                    <h3 class="text-lg max-[800px]:text-sm max-[400px]:text-xs">
+                      USD EN CONSUMO
+                    </h3>
                   </div>
                 </div>
               </div>
