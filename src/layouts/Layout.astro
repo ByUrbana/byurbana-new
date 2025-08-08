@@ -15,9 +15,23 @@ const { title } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <meta
+      name="description"
+      content="Somos una compañía de tecnología financiera especializada en medios de pago."
+    />
+    <meta name="keywords" content="fintech, tecnología financiera, pagos, adquirencia, emisión, procesamiento, BY urbana" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Somos una compañía de tecnología financiera especializada en medios de pago." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BY urbana" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="Somos una compañía de tecnología financiera especializada en medios de pago." />
+    <meta name="author" content="BY urbana" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
