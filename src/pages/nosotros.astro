@@ -62,50 +62,54 @@ import bannerVideo from "/banner-video.mp4";
       <div
         class="text-blue-200 grid grid-cols-2 h-[65vh] gap-10 mx-36 max-[1130px]:h-[100vh] max-[500px]:h-[900px] max-[800px]:mx-10 max-[1130px]:grid-cols-1"
       >
-        <div class="relative overflow-hidden">
-          <div
-            class="z-20 bg-blue-600 rounded-3xl h-full hover:opacity-0 transition-all duration-500 flex justify-between items-start p-10 absolute top-0 left-0 w-full text-9xl max-[1440px]:text-8xl font-CoFoBold max-[1280px]:text-6xl max-[500px]:text-5xl"
-          >
-            <h2>Misión</h2>
-            <span>+</span>
-          </div>
-          <div
-            class="bg-blue-200 z-10 rounded-3xl text-gray-500 absolute top-0 left-0 w-full h-full flex justify-center items-start flex-col p-10"
-          >
-            <span class="absolute top-0 left-0 p-8 text-2xl text-blue-600"
-              >Nuestra Misión</span
+        <div class="relative overflow-hidden card">
+          <div class="card-inner">
+            <div
+              class="card-front z-20 bg-blue-600 rounded-3xl h-full flex justify-between items-start p-10 absolute top-0 left-0 w-full text-9xl max-[1440px]:text-8xl font-CoFoBold max-[1280px]:text-6xl max-[500px]:text-5xl"
             >
-            <p
-              class="text-4xl max-[1700px]:text-3xl max-[1470px]:text-2xl max-[1280px]:text-xl max-[600px]:text-lg font-CoFoMedium max-[500px]:leading-6 max-[450px]:text-sm"
+              <h2>Misión</h2>
+              <span>+</span>
+            </div>
+            <div
+              class="card-back bg-blue-200 z-10 rounded-3xl text-gray-500 absolute top-0 left-0 w-full h-full flex justify-center items-start flex-col p-10"
             >
-              Satisfacer las necesidades financieras digitales de nuestros
-              clientes, contribuyendo al alcance del éxito con nuestros
-              ecosistemas de cobros y pagos.
-            </p>
+              <span class="absolute top-0 left-0 p-8 text-2xl text-blue-600"
+                >Nuestra Misión</span
+              >
+              <p
+                class="text-4xl max-[1700px]:text-3xl max-[1470px]:text-2xl max-[1280px]:text-xl max-[600px]:text-lg font-CoFoMedium max-[500px]:leading-6 max-[450px]:text-sm"
+              >
+                Satisfacer las necesidades financieras digitales de nuestros
+                clientes, contribuyendo al alcance del éxito con nuestros
+                ecosistemas de cobros y pagos.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="relative overflow-hidden">
-          <div
-            class="z-20 bg-blue-600 rounded-3xl h-full hover:opacity-0 transition-all duration-500 flex justify-between items-start p-10 absolute top-0 left-0 w-full text-9xl max-[1440px]:text-8xl font-CoFoBold max-[1280px]:text-6xl max-[500px]:text-5xl"
-          >
-            <h2>Visión</h2>
-            <span>+</span>
-          </div>
-          <div
-            class="bg-blue-200 z-10 rounded-3xl text-gray-500 absolute top-0 left-0 w-full h-full flex justify-center items-start flex-col p-10"
-          >
-            <span class="absolute top-0 left-0 p-8 text-2xl text-blue-600"
-              >Nuestra Visión</span
+        <div class="relative overflow-hidden card">
+          <div class="card-inner">
+            <div
+              class="card-front z-20 bg-blue-600 rounded-3xl h-full hover:opacity-0 transition-all duration-500 flex justify-between items-start p-10 absolute top-0 left-0 w-full text-9xl max-[1440px]:text-8xl font-CoFoBold max-[1280px]:text-6xl max-[500px]:text-5xl"
             >
-            <p
-              class="text-4xl max-[1700px]:text-3xl max-[1470px]:text-2xl max-[1280px]:text-xl max-[600px]:text-lg font-CoFoMedium max-[500px]:leading-6 max-[450px]:text-sm"
+              <h2>Visión</h2>
+              <span>+</span>
+            </div>
+            <div
+              class="card-back bg-blue-200 z-10 rounded-3xl text-gray-500 absolute top-0 left-0 w-full h-full flex justify-center items-start flex-col p-10"
             >
-              Como empresa tecnológica y financiera creemos en el progreso
-              constante y la innovación. Por eso, estamos elevando continuamente
-              el nivel de nuestros productos mediante la optimización de
-              recursos tecnológicos, facilitando la experiencia de nuestros
-              clientes y sus usuarios.
-            </p>
+              <span class="absolute top-0 left-0 p-8 text-2xl text-blue-600"
+                >Nuestra Visión</span
+              >
+              <p
+                class="text-4xl max-[1700px]:text-3xl max-[1470px]:text-2xl max-[1280px]:text-xl max-[600px]:text-lg font-CoFoMedium max-[500px]:leading-6 max-[450px]:text-sm"
+              >
+                Como empresa tecnológica y financiera creemos en el progreso
+                constante y la innovación. Por eso, estamos elevando
+                continuamente el nivel de nuestros productos mediante la
+                optimización de recursos tecnológicos, facilitando la
+                experiencia de nuestros clientes y sus usuarios.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -241,3 +245,40 @@ import bannerVideo from "/banner-video.mp4";
     </section>
   </main>
 </Layout>
+
+<style>
+  /* From Uiverse.io by vamsidevendrakumar */
+  .card {
+  }
+
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .card-front {
+    transform: rotateY(0deg);
+  }
+
+  .card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+  }
+</style>
