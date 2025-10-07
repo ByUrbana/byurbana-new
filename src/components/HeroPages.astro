@@ -6,11 +6,11 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<section class="h-[40vh] max-[800px]:h-fit flex justify-center items-center">
+<section class="bg-gradient-to-t from-[#1b2027] to70% to-[#001228] h-[40vh] max-[800px]:h-fit flex justify-center items-center overflow-hidden relative">
   <div
     class="pt-20 flex justify-center items-center gap-10 w-full px-10 max-[850px]:gap-0"
   >
-    <div class="bg-white p-10 rounded-3xl max-[850px]:w-full pt-10">
+    <div class="p-10 rounded-3xl max-[850px]:w-full pt-10 relative z-20">
       <h2
         class="text-7xl max-xl:text-6xl text-blue-600 font-CoFoBold max-[1000px]:text-5xl max-[700px]:text-4xl"
       >
@@ -18,7 +18,7 @@ const { title } = Astro.props;
       </h2>
     </div>
     <div
-      class="bg-gradient-to-t from-[#1b2027] to70% to-[#001228] w-full h-[288px] rounded-3xl relative overflow-hidden max-[850px]:hidden"
+      class=" w-full h-[288px] rounded-3xl   max-[850px]:hidden"
     >
       <img
         class="bg-animation bg-animation1 absolute top-0 left-0 h-[120vh] z-10 -translate-y-[6%]"
