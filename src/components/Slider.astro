@@ -182,7 +182,7 @@
   const prevBtn = document.getElementById("prev-btn"); // Nuevo
   const nextBtn = document.getElementById("next-btn"); // Nuevo
   let currentSlideIndex = 0;
-  let autoPlayInterval;
+  let autoPlayInterval: number | undefined;
   const intervalTime = 8000; // 8 segundos
 
   /**
@@ -200,7 +200,7 @@
         "bg-opacity-50",
         "cursor-pointer"
       );
-      dot.setAttribute("data-index", index);
+      dot.setAttribute("data-index", index.toString());
 
       // Añadir evento click para navegar al slide correspondiente
       dot.addEventListener("click", () => {
@@ -208,7 +208,7 @@
         resetAutoPlay();
       });
 
-      indicatorsContainer.appendChild(dot);
+      indicatorsContainer?.appendChild(dot);
     });
   }
 
@@ -216,7 +216,7 @@
    * Muestra un slide específico por índice.
    * @param {number} index - El índice del slide a mostrar.
    */
-  function showSlide(index) {
+  function showSlide(index: number) {
     // Manejar el bucle: si es menor que 0, va al final; si es mayor, va al inicio.
     if (index >= slides.length) {
       currentSlideIndex = 0;
@@ -240,8 +240,8 @@
    * Actualiza el estado visual de los indicadores (puntos).
    */
   function updateIndicators() {
-    const dots = indicatorsContainer.querySelectorAll(".indicator-dot");
-    dots.forEach((dot, index) => {
+    const dots = indicatorsContainer?.querySelectorAll(".indicator-dot");
+    dots?.forEach((dot, index) => {
       dot.classList.remove("active", "bg-opacity-100");
       dot.classList.add("bg-opacity-50");
       if (index === currentSlideIndex) {
@@ -293,20 +293,20 @@
     startAutoPlay(); // Inicia la rotación automática
 
     // 2. Asignar clics a los botones (solución al problema de navegación)
-    prevBtn.addEventListener("click", function () {
+    prevBtn?.addEventListener("click", function () {
       prevSlide();
       resetAutoPlay();
     });
 
-    nextBtn.addEventListener("click", function () {
+    nextBtn?.addEventListener("click", function () {
       nextSlide();
       resetAutoPlay();
     });
 
     // 3. Pausar/Reanudar auto-play al pasar el ratón
-    slider.addEventListener("mouseenter", () =>
+    slider?.addEventListener("mouseenter", () =>
       clearInterval(autoPlayInterval)
     );
-    slider.addEventListener("mouseleave", startAutoPlay);
+    slider?.addEventListener("mouseleave", startAutoPlay);
   };
 </script>
