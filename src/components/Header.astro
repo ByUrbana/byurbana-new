@@ -4,25 +4,12 @@
   <nav
     class="flex justify-between px-36 items-center w-full max-[800px]:px-10 max-[1440px]:px-20 max-[550px]:px-5"
   >
-    <div></div>
     <div
-      class="flex flex-row flex-nowrap gap-2 items-center justify-center w-[400px] h-auto"
+      class="flex flex-row flex-nowrap gap-5 items-center justify-center w-[400px] h-auto pl-5"
     >
       <a
-        href="https://byurbana.github.io/byuclub"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="translate-x-14 max-[1000px]:translate-x-0 max-[1440px]:translate-x-14"
-      >
-        <img
-          src="/byuclub_v6_menos_espacio_ blanco.png"
-          alt="logo byurbana"
-          class="w-[400px] max-[1440px]:w-[350px] max-[300px]:w-350px] h-full object-cover"
-        />
-      </a>
-      <a
         href="/"
-        class="translate-x-14 max-[1000px]:translate-x-0 max-[1440px]:translate-x-14"
+        class="translate-x-14 max-[1000px]:translate-x-0 max-[1440px]:translate-x-14 scale-150 pr-4"
       >
         <img
           src="/BY-URBANA_ MENOS-ESPACIADA_ blanco.png"
@@ -31,10 +18,22 @@
         />
       </a>
       <a
+        href="https://byurbana.github.io/byuclub"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="translate-x-14 max-[1000px]:translate-x-0 max-[1440px]:translate-x-14 scale-75"
+      >
+        <img
+          src="/byuclub_v6_menos_espacio_ blanco.png"
+          alt="logo byurbana"
+          class="w-[400px] max-[1440px]:w-[350px] max-[300px]:w-350px] h-full object-cover"
+        />
+      </a>
+      <a
         href="https://byuplay.com/"
         target="_blank"
         rel="noopener noreferrer"
-        class="translate-x-14 max-[1000px]:translate-x-0 max-[1440px]:translate-x-14"
+        class="translate-x-14 max-[1000px]:translate-x-0 max-[1440px]:translate-x-14 scale-90"
       >
         <img
           src="/byuplay.png"
@@ -43,81 +42,96 @@
         />
       </a>
     </div>
-    <!-- <a
-      href="/contacto"
-      class="font-medium text-sm border rounded-full px-10 py-1 max-[550px]:hidden max-[1680px]:text-[13px] max-[1366px]:px-8 max-[1366px]:text-[10px]"
-      >CONTACTANOS</a
-    > -->
-    <div id="openNavbar" class="cursor-pointer">
-      <img
-        class="w-5 max-[1680px]:w-5 max-[500px]:w-3 max-[550px]:ml-3"
-        src="/navbar-icon.png"
-        alt="Icono de navegacion"
-      />
-      <div
-        id="menu"
-        class="bg-[#adc6fb] z-50 rounded-2xl max-[550px]:h-screen max-[550px]:w-[100vw] justify-center items-center flex-col absolute right-0 mx-36 max-[800px]:mx-10 max-[550px]:mx-0 max-[1440px]:mx-20 hidden transform transition-all max-[550px]:top-0 max-[550px]:rounded-none max-[550px]:right-0"
-      >
-        <ul
-          class="flex gap-4 flex-col text-black relative p-10 w-[700px] max-[550px]:justify-center max-[550px]:items-center h-[750px] max-[1000px]:w-[500px] max-[1000px]:h-[550px] max-[550px]:w-[90vw] max-[550px]:h-[80vh]"
-        >
-          <li>
-            <a
-              class="text-7xl max-[1000px]:text-5xl hover:text-8xl max-[1000px]:hover:text-6xl transition-all duration-300"
-              href="/">Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="text-7xl max-[1000px]:text-5xl hover:text-8xl max-[1000px]:hover:text-6xl transition-all duration-300"
-              href="/servicios">Servicios</a
-            >
-          </li>
-          <li>
-            <a
-              class="text-7xl max-[1000px]:text-5xl hover:text-8xl max-[1000px]:hover:text-6xl transition-all duration-300"
-              href="/nosotros">Nosotros</a
-            >
-          </li>
-          <li>
-            <a
-              class="text-7xl max-[1000px]:text-5xl hover:text-8xl max-[1000px]:hover:text-6xl transition-all duration-300"
-              href="/superapp">SuperApp</a
-            >
-          </li>
-          <li>
-            <a
-              class="text-7xl max-[1000px]:text-5xl hover:text-8xl max-[1000px]:hover:text-6xl transition-all duration-300"
-              href="/contacto">Contacto</a
-            >
-          </li>
-        </ul>
-        <button
-          id="bottom-close"
-          class="absolute top-5 right-5 py-4 px-16 rounded-2xl border-black border text-black text-3xl font-medium max-[1000px]:px-8 max-[1000px]:py-2"
-          >X</button
-        >
+    <div class="flex items-center gap-5">
+      <div class="flex gap-2 max-[550px]:ml-3 max-[768px]:hidden">
+        <button>
+          <img
+            class="w-8 max-lg:w-6"
+            src="/estados-unidos.png"
+            alt="Bandera Estados Unidos"
+          />
+        </button>
+        <button>
+          <img class="w-8 max-lg:w-6" src="/brasil.png" alt="Bandera Brasil" />
+        </button>
+        <button>
+          <img
+            class="w-8 max-lg:w-6"
+            src="/argentina.png"
+            alt="Bandera Argentina"
+          />
+        </button>
+      </div>
+      <div id="openNavbar" class="cursor-pointer">
+        <img
+          class="w-5 max-[1680px]:w-5 max-[500px]:w-3 max-[550px]:ml-3"
+          src="/navbar-icon.png"
+          alt="Icono de navegacion"
+        />
         <div
-          class="flex justify-between w-full flex-row p-10 items-end absolute bottom-0 text-black text-lg max-[550px]:flex-col max-[550px]:gap-5 max-[550px]:items-center max-[550px]:pt-0"
+          id="menu"
+          class="bg-[#adc6fb] z-50 rounded-2xl max-[550px]:h-screen max-[550px]:w-[100vw] justify-center items-center flex-col absolute right-0 mx-36 max-[1440px]:-right-20 max-[550px]:mx-0 hidden transform transition-all max-[550px]:top-0 max-[550px]:rounded-none max-[550px]:right-0"
         >
-          <div>
-            <a
-              class="border-b-4 border-black"
-              href="https://www.instagram.com/by.urbana/
-"
-              target="_blank"
-              rel="noopener noreferrer">Instagram</a
-            >
-            <span>↗</span>
-          </div>
-          <div>
-            <a
-              class="border-b-4 border-black"
-              href="https://www.linkedin.com/company/byurbana/"
-              target="_blank"
-              rel="noopener noreferrer">LinkedIn</a
-            >
-            <span>↗</span>
+          <ul
+            class="flex gap-2 flex-col text-black relative p-10 w-[300px] max-[550px]:justify-center max-[550px]:items-center h-[350px] max-[550px]:w-[90vw] max-[550px]:h-[80vh]"
+          >
+            <li>
+              <a
+                class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
+                href="/">Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
+                href="/servicios">Servicios</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
+                href="/nosotros">Nosotros</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
+                href="/modelos">Modelos</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
+                href="/contacto">Contacto</a
+              >
+            </li>
+          </ul>
+          <button
+            id="bottom-close"
+            class="absolute top-5 right-5 py-2 px-8 rounded-2xl hover:scale-105 transition-all border-black border text-black text-xl font-medium max-[1000px]:px-8 max-[1000px]:py-2"
+            >X</button
+          >
+          <div
+            class="flex justify-between w-full flex-row p-10 items-end absolute bottom-0 text-black text-lg max-[550px]:flex-col max-[550px]:gap-5 max-[550px]:items-center max-[550px]:pt-0"
+          >
+            <div>
+              <a
+                class="text-sm border-b-4 border-black"
+                href="https://www.instagram.com/by.urbana/"
+                target="_blank"
+                rel="noopener noreferrer">Instagram</a
+              >
+              <span>↗</span>
+            </div>
+            <div>
+              <a
+                class="text-sm border-b-4 border-black"
+                href="https://www.linkedin.com/company/byurbana/"
+                target="_blank"
+                rel="noopener noreferrer">LinkedIn</a
+              >
+              <span>↗</span>
+            </div>
           </div>
         </div>
       </div>

@@ -1,16 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroVideo from "/Hero-Home-Video.mp4";
-import Contact from "../components/Contact.astro";
-// Tema predeterminado
-import "@splidejs/splide/css";
-
-// u otros temas
-import "@splidejs/splide/css/skyblue";
-import "@splidejs/splide/css/sea-green";
-
-//o solo estilos principales
-import "@splidejs/splide/css/core";
+import Slider from "../components/Slider.astro";
 ---
 
 <Layout title="ByUrbana">
@@ -19,123 +10,9 @@ import "@splidejs/splide/css/core";
       <div
         class="z-20 relative text-white flex flex-col w-full h-full justify-center items-center"
       >
-        <div
-          class="flex h-full w-[650px] max-[1680px]:w-[600px] relative left-48 max-[1440px]:left-36 max-[1000px]:left-0 max-[1440px]:w-[540px] max-[550px]:w-[380px] max-[430px]:w-[345px] overflow-hidden"
-        >
-          <div
-            class="flex justify-center items-center gap-2 flex-row w-fit animate-slide"
-          >
-            <header
-              class="flex justify-center items-start flex-col gap-4 pt-32 max-[1440px]:pt-20 w-[650px] max-[1680px]:w-[600px] max-[550px]:w-[380px] relative max-[1440px]:w-[540px] max-[430px]:w-[345px]"
-            >
-              <p
-                class="font-medium text-base font-CoFoNormal
-              max-[1280px]:text-[10px]"
-              >
-                BESPOKE FINTECH-INSURTECH SOLUTIONS
-              </p>
-              <h1
-                class="text-[4rem] leading-none max-[1440px]:text-5xl max-[550px]:text-3xl max-[1680px]:text-[3.7rem] max-[1280px]:text-[2.7rem] max-[1280px]:leading-none"
-              >
-                <span class="font-black font-CoFoBold">FACILITAMOS</span> LA <span
-                  class="text-nowrap">))) INTEGRACIÓN )))</span
-                > DE ECOSISTEMAS DE PAGO.
-              </h1>
-              <p
-                class="font-CoFoMedium text-lg max-[480px]:text-xs max-[1000px]:font-bold leading-5 max-[1440px]:text-sm max-[1440px]:leading-4 max-[1280px]:leading-3 w-4/5 max-[1000px]:w-full"
-              >
-                Somos una compañía de tecnología financiera especializada en la
-                emisión, adquirencia, procesamiento y ecosistemas de medios de
-                pago. Nuestras herramientas personalizadas impulsan el
-                crecimiento de tu empresa.
-              </p>
-              <a
-                class="font-bold text-xl border-b-2 max-[480px]:text-sm max-[1680px]:text-lg max-[1440px]:text-base max-[1280px]:text-sm"
-                href="/servicios">Conocé más ↗</a
-              >
-            </header>
-            <header
-              class="flex justify-center items-start flex-col gap-4 pt-32 max-[1440px]:pt-20 w-[650px] max-[1680px]:w-[600px] max-[550px]:w-[380px] relative max-[1440px]:w-[540px] max-[430px]:w-[345px]"
-            >
-              <img
-                src="/byuclub_v6_menos_espacio_ blanco.png"
-                alt="byuclub logo"
-                class="w-32 max-[1440px]:w-24 max-[500px]:w-28"
-              />
-              <h1
-                class="text-[4rem] uppercase leading-none max-[1440px]:text-5xl max-[480px]:text-4xl max-[1680px]:text-[3.7rem] max-[1280px]:text-[2.7rem] max-[1280px]:leading-none"
-              >
-                <span class="font-black font-CoFoBold">Descuentos</span>,
-                experiencias y accesos exclusivos.
-              </h1>
-              <p
-                class="font-CoFoMedium text-lg max-[480px]:text-xs max-[1000px]:font-bold leading-5 max-[1440px]:text-sm max-[1440px]:leading-4 max-[1280px]:leading-3 w-4/5 max-[1000px]:w-full"
-              >
-                En nuestro club de beneficios vas a encontrar un espacio con
-                oportunidades únicas tanto para personas como para empresas.
-              </p>
-              <span
-                class="font-bold text-xl max-[480px]:text-sm max-[1680px]:text-lg max-[1440px]:text-base max-[1280px]:text-sm"
-                >¿Estás listo para descubrirlo?</span
-              >
-            </header>
-            <header
-              class="flex justify-center items-start flex-col gap-4 pt-32 max-[1440px]:pt-20 w-[650px] max-[1680px]:w-[600px] max-[550px]:w-[380px] relative max-[1440px]:w-[540px] max-[430px]:w-[345px]"
-            >
-              <img
-                src="/byuplay.png"
-                alt="byuplay logo"
-                class="w-32 max-[1440px]:w-24 max-[500px]:w-28"
-              />
-              <h1
-                class="text-[4rem] uppercase leading-none max-[1440px]:text-5xl max-[480px]:text-4xl max-[1680px]:text-[3.7rem] max-[1280px]:text-[2.7rem] max-[1280px]:leading-none"
-              >
-                La plataforma <span class="text-nowrap font-black font-CoFoBold"
-                  >all-in-one</span
-                > que estabas esperando.
-              </h1>
-              <p
-                class="font-CoFoMedium pr-4 text-lg max-[480px]:text-xs max-[1000px]:font-bold leading-5 max-[1440px]:text-sm max-[1440px]:leading-4 max-[1280px]:leading-3 w-4/5 max-[1000px]:w-full"
-              >
-                En nuestra plataforma podés acceder al contenido más variado:
-                documentales, ebooks, películas, música y eventos en vivo, todo
-                en un solo lugar. Disfrutá de la transmisión exclusiva Fashion
-                Tour 2025.
-              </p>
-            </header>
-            <header
-              class="flex justify-center items-start flex-col gap-4 pt-32 max-[1440px]:pt-20 w-[650px] max-[1680px]:w-[600px] max-[550px]:w-[380px] relative max-[1440px]:w-[540px] max-[430px]:w-[345px]"
-            >
-              <p
-                class="font-medium text-base font-CoFoNormal
-              max-[1280px]:text-[10px]"
-              >
-                BESPOKE FINTECH-INSURTECH SOLUTIONS
-              </p>
-              <h1
-                class="text-[4rem] leading-none max-[1440px]:text-5xl max-[550px]:text-3xl max-[1680px]:text-[3.7rem] max-[1280px]:text-[2.7rem] max-[1280px]:leading-none"
-              >
-                <span class="font-black font-CoFoBold">FACILITAMOS</span> LA <span
-                  class="text-nowrap">))) INTEGRACIÓN )))</span
-                > DE ECOSISTEMAS DE PAGO.
-              </h1>
-              <p
-                class="font-CoFoMedium text-lg max-[480px]:text-xs max-[1000px]:font-bold leading-5 max-[1440px]:text-sm max-[1440px]:leading-4 max-[1280px]:leading-3 w-4/5 max-[1000px]:w-full"
-              >
-                Somos una compañía de tecnología financiera especializada en la
-                emisión, adquirencia, procesamiento y ecosistemas de medios de
-                pago. Nuestras herramientas personalizadas impulsan el
-                crecimiento de tu empresa.
-              </p>
-              <a
-                class="font-bold text-xl border-b-2 max-[480px]:text-sm max-[1680px]:text-lg max-[1440px]:text-base max-[1280px]:text-sm"
-                href="/servicios">Conocé más ↗</a
-              >
-            </header>
-          </div>
-        </div>
+        <Slider />
         <footer
-          class="flex flex-grow flex-row justify-between max-[480px]:justify-centr px-36 w-full items-center pb-7 max-[800px]:px-10 max-[500px]:px-5"
+          class="flex flex-grow flex-row absolute bottom-0 justify-between max-[480px]:justify-centr px-36 w-full items-center pb-7 max-[800px]:px-10 max-[500px]:px-5"
         >
           <div class="flex gap-3">
             <img
@@ -219,57 +96,61 @@ import "@splidejs/splide/css/core";
         >
       </div>
     </section>
-    <section
-      class="flex flex-row w-full h-screen overflow-hidden border-t max-[1100px]:flex-col max-[1100px]:h-full max-[1100px]:"
-    >
-      <section class="relative bg-blue-600 z-30">
-        <div
-          class="w-[35vw] p-6 max-[1100px]:py-10 px-10 max-[1280px]:px-10 max-[500px]:px-5 max-[500px]:pb-14 h-full top-0 left-0 flex justify-evenly max-[1100px]:justify-center max-[800px]:gap-8 max-[1100px]:w-full items-start flex-col max-[800px]:flex-col shadow-[2px_-3px_19px_0] shadow-[#adc6fb99] max-[1100px]:shadow-none max-[1100px]:flex-row max-[1100px]:items-center"
-        >
-          <div
-            class="text-white flex justify-evenly items-center flex-col gap-4 p-6 h-full my-10"
-          >
-            <div
-              class="text-white flex flex-col justify-start font-CoFoMedium items-start text-lg max-[1366px]:text-sm max-[1366px]:leading-4 leading-5 max-[800px]:pl-0"
-            >
-              <ul
-                class="flex justify-center items-start flex-col gap-10 text-white text-2xl max-[1440px]:text-xl max-[1100px]:text-xl"
-              >
-                <li>
-                  Asistencia y asesoramiento de los procesos los 365 días del
-                  año.
-                </li>
-                <li>Te evitamos la tarea de auntenticar los pagos.</li>
-                <li>
-                  Te evitamos la tarea de auntenticar las transacciones entre
-                  bancos y el movimiento de efectivo.
-                </li>
-                <li>Más seguridad en las transacciones.</li>
-                <li>Deteccion y monitoreo 24/7/365.</li>
-                <li>Simplificamos la conciliación.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="bg-[#041226] w-[calc(100%-30vw)] max-[1100px]:w-[100%] l-32 max-[1100px]:pl-0 max-[1100px]:py-12 max-[900px]:py max-[1100px]:h-[90vh]"
-      >
-        <div class="splide h-full">
-          <div class="flex justify-center items-center w-full">
+    <section class="flex flex-row w-full overflow-hidden border-t">
+      <section class="bg-[#041226] w-full py-28">
+        <div class="h-full w-[80vw] mx-auto flex flex-col gap-10">
+          <div class="flex justify-center items-center w-full pb-10">
             <h2
               class="text-white text-4xl w-fit font-CoFoMedium max-[1440px]:text-3xl max-[800px]:text-lg max-[1100px]:mb-7"
             >
               BENEFICIOS PARA COMERCIOS
             </h2>
           </div>
-          <div class="splide__track !pl-0 h-full">
-            <ul class="splide__list items-center w-full">
+          <ul
+            class="grid grid-cols-2 max-[850px]:grid-cols-1 h-full mx-auto grid-rows-2 max-[850px]:grid-rows-4 gap-24 max-[1440px]:gap-16 justify-center items-center"
+          >
+            <li
+              class="max-[1100px]:max-w-[650px] max-[550px]:w-[75vw] h-[700px] max-[1440px]:h-[600px] max-[900px]:h-[500px]  max-[1280px]:h-[550px] max-[1280px]:h-[550px] flex justify-center items-center"
+            >
+              <div
+                class="card text-white relative overflow-hidden rounded-[40px] border p-10 border-blue-800 max-[550px]:w-[70vw] flex flex-col justify-between items-start h-full w-[525px] max-[385px]:w-[250px] max-[1440px]:w-[400px] max-[1280px]:w-[380px] max-[1100px]:w-[400px]"
+              >
+                <video
+                  class="absolute h-full top-0 left-0 object-cover"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source src="/video1.mp4" type="video/mp4" />
+                </video>
+                <span
+                  class="bg-[#04122675] absolute z-10 h-full w-full top-0 left-0 object-cover"
+                ></span>
+                <div class="flex justify-between items-start w-full z-20 gap-2">
+                  <h3
+                    class="text-5xl leading-[.8] max-[1440px]:text-4xl max-[1280px]:text-3xl max-[1280px]:leading-7 max-[1440px]:leading-8"
+                  >
+                    <span class="font-CoFoBold">EMISIÓN</span>
+                  </h3>
+                  <span
+                    class="font-CoFoBold -tracking-widest text-5xl max-[1440px]:text-4xl max-[1280px]:text-3xl max-[400px]:hidden"
+                    >)))</span
+                  >
+                </div>
+                <p
+                  class="text-xl max-[1440px]:text-sm max-[1440px]:leading-4 max-[400px]:text-[9px] font-CoFoMedium max-[1366px]:font-normal max-[1280px]:w-56 max-[400px]:w-full max-[1280px]:leading-3 w-64 z-20 leading-5"
+                >
+                  Emitimos tarjetas de débito, crédito y prepago. Cada cliente
+                  pueda emitir sus tarjetas como miembro afiliado a la compañía,
+                  sin necesidad de tramitar sus propias licencias, agilizando
+                  tiempos y costos.
+                </p>
+              </div>
               <li
-                class="splide__slide w-[650px] max-[1440px]:w-[500px] max-[1100px]:w-[75vw] max-[1100px]:max-w-[650px] max-[550px]:w-[75vw] h-4/5 max-[1440px]:h-[75%] max-[1366px]:h-[85%] max-[385px]:h-[75%] max-[1280px]:h-[75%] max-[1100px]:h-[95%] max-[450px]:h-[85%] flex justify-center items-center"
+                class="max-[1100px]:max-w-[650px] max-[550px]:w-[75vw] h-[700px] max-[1440px]:h-[600px] max-[900px]:h-[500px]  max-[1280px]:h-[550px] max-[1280px]:h-[550px] flex justify-center items-center"
               >
                 <div
-                  class="card text-white relative overflow-hidden rounded-[40px] border p-10 border-blue-800 max-[550px]:w-[70vw] flex flex-col justify-between items-start h-full w-[525px] max-[385px]:w-[250px] max-[1440px]:w-[400px] max-[1280px]:w-[380px] max-[1100px]:w-[400px]"
+                  class="card text-white relative overflow-hidden rounded-[40px] max-[550px]:w-[70vw] border p-10 border-blue-800 flex flex-col justify-between items-start h-full w-[525px] max-[385px]:w-[250px] max-[1440px]:w-[400px] max-[1280px]:w-[380px] max-[1100px]:w-[400px]"
                 >
                   <video
                     class="absolute h-full top-0 left-0 object-cover"
@@ -277,160 +158,119 @@ import "@splidejs/splide/css/core";
                     muted
                     loop
                   >
-                    <source src="/video1.mp4" type="video/mp4" />
+                    <source src="/video2.mp4" type="video/mp4" />
                   </video>
                   <span
-                    class="bg-[#04122675] absolute z-10 h-full w-full top-0 left-0 object-cover"
+                    class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
                   ></span>
                   <div
-                    class="flex justify-between items-start w-full z-20 gap-2"
+                    class="flex justify-between max-[550px]:justify-center items-start w-full z-20 gap-2"
                   >
                     <h3
-                      class="text-5xl leading-[.8] max-[1440px]:text-4xl max-[1280px]:text-3xl max-[1280px]:leading-7 max-[1440px]:leading-8"
+                      class="text-5xl leading-[.8] max-[1440px]:text-4xl max-[1280px]:text-3xl max-[1280px]:leading-7 max-[550px]:text-2xl max-[550px]:w-full max-[1440px]:leading-8"
                     >
-                      <span class="font-CoFoBold">EMISIÓN</span>
+                      <span class="font-CoFoBold">ADQUIRENCIA</span>
                     </h3>
                     <span
-                      class="font-CoFoBold -tracking-widest text-5xl max-[1440px]:text-4xl max-[1280px]:text-3xl max-[400px]:hidden"
+                      class="font-CoFoBold text-5xl -tracking-widest max-[1440px]:text-4xl max-[1280px]:text-3xl max-[400px]:hidden"
                       >)))</span
                     >
                   </div>
                   <p
-                    class="text-lg max-[1440px]:text-sm max-[1440px]:leading-4 max-[400px]:text-[9px] font-CoFoMedium max-[1366px]:font-normal max-[1280px]:w-56 max-[400px]:w-full max-[1280px]:leading-3 w-64 z-20 leading-5"
+                    class="text-xl max-[1440px]:text-sm max-[1440px]:leading-4 max-[400px]:text-[9px] font-CoFoMedium max-[1366px]:font-normal max-[1280px]:w-56 max-[400px]:w-full max-[1280px]:leading-3 w-64 z-20 leading-5"
                   >
-                    Emitimos tarjetas de débito, crédito y prepago. Cada cliente
-                    pueda emitir sus tarjetas como miembro afiliado a la
-                    compañía, sin necesidad de tramitar sus propias licencias,
-                    agilizando tiempos y costos.
+                    Proveemos alternativas de cobros y pagos. Terminales de
+                    punto de venta (TPV), cobros con tarjeta, transferencias y
+                    pago a proveedores a través de Qrs.
                   </p>
                 </div>
-                <li
-                  class="splide__slide w-[650px] max-[1440px]:w-[500px] max-[1100px]:w-[75vw] max-[1100px]:max-w-[650px] max-[550px]:w-[75vw] h-4/5 max-[1440px]:h-[75%] max-[1366px]:h-[85%] max-[385px]:h-[75%] max-[1280px]:h-[75%] max-[1100px]:h-[95%] max-[450px]:h-[85%] flex justify-center items-center"
-                >
-                  <div
-                    class="card text-white relative overflow-hidden rounded-[40px] max-[550px]:w-[70vw] border p-10 border-blue-800 flex flex-col justify-between items-start h-full w-[525px] max-[385px]:w-[250px] max-[1440px]:w-[400px] max-[1280px]:w-[380px] max-[1100px]:w-[400px]"
-                  >
-                    <video
-                      class="absolute h-full top-0 left-0 object-cover"
-                      autoplay
-                      muted
-                      loop
-                    >
-                      <source src="/video2.mp4" type="video/mp4" />
-                    </video>
-                    <span
-                      class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
-                    ></span>
-                    <div
-                      class="flex justify-between max-[550px]:justify-center items-start w-full z-20 gap-2"
-                    >
-                      <h3
-                        class="text-5xl leading-[.8] max-[1440px]:text-4xl max-[1280px]:text-3xl max-[1280px]:leading-7 max-[550px]:text-2xl max-[550px]:w-full max-[1440px]:leading-8"
-                      >
-                        <span class="font-CoFoBold">ADQUIRENCIA</span>
-                      </h3>
-                      <span
-                        class="font-CoFoBold text-5xl -tracking-widest max-[1440px]:text-4xl max-[1280px]:text-3xl max-[400px]:hidden"
-                        >)))</span
-                      >
-                    </div>
-                    <p
-                      class="text-lg max-[1440px]:text-sm max-[1440px]:leading-4 max-[400px]:text-[9px] font-CoFoMedium max-[1366px]:font-normal max-[1280px]:w-56 max-[400px]:w-full max-[1280px]:leading-3 w-64 z-20 leading-5"
-                    >
-                      Proveemos alternativas de cobros y pagos. Terminales de
-                      punto de venta (TPV), cobros con tarjeta, transferencias y
-                      pago a proveedores a través de Qrs.
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="splide__slide w-[650px] max-[1440px]:w-[500px] max-[1100px]:w-[75vw] max-[1100px]:max-w-[650px] max-[550px]:w-[75vw] h-4/5 max-[1440px]:h-[75%] max-[1366px]:h-[85%] max-[385px]:h-[75%] max-[1280px]:h-[75%] max-[1100px]:h-[95%] max-[450px]:h-[85%] flex justify-center items-center"
-                >
-                  <div
-                    class="card text-white relative overflow-hidden rounded-[40px] max-[550px]:w-[70vw] border p-10 border-blue-800 flex flex-col justify-between items-start h-full w-[525px] max-[385px]:w-[250px] max-[1440px]:w-[400px] max-[1280px]:w-[380px] max-[1100px]:w-[400px]"
-                  >
-                    <video
-                      class="absolute h-full top-0 left-0 object-cover"
-                      autoplay
-                      muted
-                      loop
-                    >
-                      <source src="/video3.mp4" type="video/mp4" />
-                    </video>
-                    <span
-                      class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
-                    ></span>
-                    <div
-                      class="flex justify-between max-[550px]:justify-center items-start w-full z-20 gap-2"
-                    >
-                      <h3
-                        class="text-5xl leading-[.8] max-[1440px]:text-4xl max-[1280px]:text-3xl max-[1280px]:leading-7 max-[550px]:text-2xl max-[550px]:w-full max-[1440px]:leading-8"
-                      >
-                        SOMOS <br /><span class="font-CoFoBold"
-                          >GENERADORES DE PRODUCTOS</span
-                        >
-                      </h3>
-                      <span
-                        class="font-semibold text-5xl -tracking-widest max-[1440px]:text-4xl max-[1280px]:text-3xl max-[400px]:hidden"
-                        >)))</span
-                      >
-                    </div>
-                    <p
-                      class="text-lg max-[1440px]:text-sm max-[1440px]:leading-4 max-[400px]:text-[9px] font-CoFoMedium max-[1366px]:font-normal max-[1280px]:w-56 max-[400px]:w-full max-[1280px]:leading-3 w-64 z-20 leading-5"
-                    >
-                      Facilitamos soluciones B2B y B2B2C a medida, configuradas
-                      de acuerdo al tipo de negocio, sus colaboradores y
-                      clientes. Adquirencia, billeteras, terminales de puntos de
-                      venta y más, integrables a distintos ecosistemas
-                      digitales.
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="splide__slide w-[650px] max-[1440px]:w-[500px] max-[1100px]:w-[75vw] max-[1100px]:max-w-[650px] max-[550px]:w-[75vw] h-4/5 max-[1440px]:h-[75%] max-[1366px]:h-[85%] max-[385px]:h-[75%] max-[1280px]:h-[75%] max-[1100px]:h-[95%] max-[450px]:h-[85%] flex justify-center items-center"
-                >
-                  <div
-                    class="card text-white relative overflow-hidden rounded-[40px] max-[550px]:w-[70vw] border p-10 border-blue-800 flex flex-col justify-between items-start h-full w-[525px] max-[385px]:w-[250px] max-[1440px]:w-[400px] max-[1280px]:w-[380px] max-[1100px]:w-[400px]"
-                  >
-                    <video
-                      class="absolute h-full top-0 left-0 object-cover"
-                      autoplay
-                      muted
-                      loop
-                    >
-                      <source src="/video4.mp4" type="video/mp4" />
-                    </video>
-                    <span
-                      class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
-                    ></span>
-                    <div
-                      class="flex justify-between max-[550px]:justify-center items-start w-full z-20 gap-2"
-                    >
-                      <h3
-                        class="text-5xl leading-[.8] max-[1440px]:text-4xl max-[1280px]:text-3xl max-[1280px]:leading-7 max-[550px]:text-2xl max-[550px]:w-full max-[1440px]:leading-8"
-                      >
-                        SOMOS <br /><span class="font-CoFoBold"
-                          >CONSULTORES</span
-                        >
-                      </h3>
-                      <span
-                        class="font-CoFoBold text-5xl -tracking-widest max-[1440px]:text-4xl max-[1280px]:text-3xl max-[400px]:hidden"
-                        >)))</span
-                      >
-                    </div>
-                    <p
-                      class="text-lg max-[1440px]:text-sm max-[1440px]:leading-4 max-[400px]:text-[9px] font-CoFoMedium max-[1366px]:font-normal max-[1280px]:w-56 max-[400px]:w-full max-[1280px]:leading-3 w-64 z-20 leading-5"
-                    >
-                      Brindamos <span class="font-CoFoBold"
-                        >asesoramiento experto en cobros y pagos,</span
-                      > impulsando el éxito de nuestros clientes. Nuestro compromiso
-                      es ser tu socio estratégico en cada paso del camino.
-                    </p>
-                  </div>
-                </li>
               </li>
-            </ul>
-          </div>
+              <li
+                class="max-[1100px]:max-w-[650px] max-[550px]:w-[75vw] h-[700px] max-[1440px]:h-[600px] max-[900px]:h-[500px]  max-[1280px]:h-[550px] max-[1280px]:h-[550px] flex justify-center items-center"
+              >
+                <div
+                  class="card text-white relative overflow-hidden rounded-[40px] max-[550px]:w-[70vw] border p-10 border-blue-800 flex flex-col justify-between items-start h-full w-[525px] max-[385px]:w-[250px] max-[1440px]:w-[400px] max-[1280px]:w-[380px] max-[1100px]:w-[400px]"
+                >
+                  <video
+                    class="absolute h-full top-0 left-0 object-cover"
+                    autoplay
+                    muted
+                    loop
+                  >
+                    <source src="/video3.mp4" type="video/mp4" />
+                  </video>
+                  <span
+                    class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
+                  ></span>
+                  <div
+                    class="flex justify-between max-[550px]:justify-center items-start w-full z-20 gap-2"
+                  >
+                    <h3
+                      class="text-5xl leading-[.8] max-[1440px]:text-4xl max-[1280px]:text-3xl max-[1280px]:leading-7 max-[550px]:text-2xl max-[550px]:w-full max-[1440px]:leading-8"
+                    >
+                      SOMOS <br /><span class="font-CoFoBold"
+                        >GENERADORES DE PRODUCTOS</span
+                      >
+                    </h3>
+                    <span
+                      class="font-semibold text-5xl -tracking-widest max-[1440px]:text-4xl max-[1280px]:text-3xl max-[400px]:hidden"
+                      >)))</span
+                    >
+                  </div>
+                  <p
+                    class="text-xl max-[1440px]:text-sm max-[1440px]:leading-4 max-[400px]:text-[9px] font-CoFoMedium max-[1366px]:font-normal max-[1280px]:w-56 max-[400px]:w-full max-[1280px]:leading-3 w-64 z-20 leading-5"
+                  >
+                    Facilitamos soluciones B2B y B2B2C a medida, configuradas de
+                    acuerdo al tipo de negocio, sus colaboradores y clientes.
+                    Adquirencia, billeteras, terminales de puntos de venta y
+                    más, integrables a distintos ecosistemas digitales.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="max-[1100px]:max-w-[650px] max-[550px]:w-[75vw] h-[700px] max-[1440px]:h-[600px] max-[900px]:h-[500px]  max-[1280px]:h-[550px] max-[1280px]:h-[550px] flex justify-center items-center"
+              >
+                <div
+                  class="card text-white relative overflow-hidden rounded-[40px] max-[550px]:w-[70vw] border p-10 border-blue-800 flex flex-col justify-between items-start h-full w-[525px] max-[385px]:w-[250px] max-[1440px]:w-[400px] max-[1280px]:w-[380px] max-[1100px]:w-[400px]"
+                >
+                  <video
+                    class="absolute h-full top-0 left-0 object-cover"
+                    autoplay
+                    muted
+                    loop
+                  >
+                    <source src="/video4.mp4" type="video/mp4" />
+                  </video>
+                  <span
+                    class="bg-[#04122675] absolute z-10 w-full h-full top-0 left-0 object-cover"
+                  ></span>
+                  <div
+                    class="flex justify-between max-[550px]:justify-center items-start w-full z-20 gap-2"
+                  >
+                    <h3
+                      class="text-5xl leading-[.8] max-[1440px]:text-4xl max-[1280px]:text-3xl max-[1280px]:leading-7 max-[550px]:text-2xl max-[550px]:w-full max-[1440px]:leading-8"
+                    >
+                      ARQUITECTOS <br /><span class="font-CoFoBold"
+                        >DE SOLUCIONES FINANCIERAS</span
+                      >
+                    </h3>
+                    <span
+                      class="font-CoFoBold text-5xl -tracking-widest max-[1440px]:text-4xl max-[1280px]:text-3xl max-[400px]:hidden"
+                      >)))</span
+                    >
+                  </div>
+                  <p
+                    class="text-xl max-[1440px]:text-sm max-[1440px]:leading-4 max-[400px]:text-[9px] font-CoFoMedium max-[1366px]:font-normal max-[1280px]:w-56 max-[400px]:w-full max-[1280px]:leading-3 w-64 z-20 leading-5"
+                  >
+                    Diseñamos, integramos y optimizamos ecosistemas financieros
+                    con visión estratégica. Creamos entornos simples, seguros y
+                    escalables que impulsan la innovación y el crecimiento
+                    sostenible de tu negocio.
+                  </p>
+                </div>
+              </li>
+            </li>
+          </ul>
         </div>
       </section>
     </section>
@@ -471,7 +311,6 @@ import "@splidejs/splide/css/core";
         </div>
       </div>
     </section>
-    <Contact />
   </main>
 
   <style>
@@ -536,63 +375,5 @@ import "@splidejs/splide/css/core";
         opacity: 0;
       }
     }
-
-    .animate-slide {
-      animation: slide 35s linear infinite;
-    }
-    @keyframes slide {
-      0% {
-        transform: translateX(0%);
-      }
-      25% {
-        transform: translateX(0%);
-      }
-      30% {
-        transform: translateX(-25%);
-      }
-      55% {
-        transform: translateX(-25%);
-      }
-      60% {
-        transform: translateX(-50%);
-      }
-      85% {
-        transform: translateX(-50%);
-      }
-      90% {
-        transform: translateX(-75%);
-      }
-      100% {
-        transform: translateX(-75%);
-      }
-    }
   </style>
-
-  <script>
-    import Splide from "@splidejs/splide";
-    var splide = new Splide(".splide", {
-      wheel: true,
-      perPage: 1,
-      arrows: false,
-      pagination: false,
-      autoWidth: true,
-      width: "100%",
-      speed: 1500,
-      padding: "10rem",
-      breakpoints: {
-        1100: {
-          wheel: false,
-        },
-        breakpoints: {
-          550: {
-            gap: "2rem",
-            arrows: true,
-            pagination: true,
-          },
-        },
-      },
-    });
-
-    splide.mount();
-  </script>
 </Layout>

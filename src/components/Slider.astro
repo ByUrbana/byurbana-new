@@ -1,0 +1,312 @@
+<!-- Contenedor Principal del Carrusel --><!-- Contenedor Principal del Carrusel -->
+<header
+  id="image-slider"
+  class="relative w-full max-w-screen-lg rounded-xl overflow-hidden"
+>
+  <!-- Área de Slides (Imágenes) -->
+  <div class="slides-container relative">
+    <!-- SLIDE 1 -->
+    <div class="slide active">
+      <div
+        class="flex justify-center pl-20 pb-10 items-start w-full flex-col gap-4 max-[550px]:w-[380px] relative max-[430px]:w-[345px]"
+      >
+        <p
+          class="font-medium text-base font-CoFoNormal
+              max-[1280px]:text-[10px]"
+        >
+          BESPOKE FINTECH-INSURTECH SOLUTIONS
+        </p>
+        <h1
+          class="text-[4rem] leading-none max-[1440px]:text-5xl max-[550px]:text-3xl max-[1680px]:text-[3.7rem] max-[1280px]:text-[2.7rem] max-[1280px]:leading-none"
+        >
+          <span class="font-black font-CoFoBold">FACILITAMOS</span> LA <span
+            class="text-nowrap">))) INTEGRACIÓN )))</span
+          > DE ECOSISTEMAS DE PAGO.
+        </h1>
+        <p
+          class="font-CoFoNormal text-2xl max-[480px]:text-xs max-[1000px]:font-bold leading-6 max-[1440px]:text-sm max-[1440px]:leading-5 max-[1280px]:leading-4 w-4/5 max-[1000px]:w-full"
+        >
+          Somos una compañía de tecnología financiera especializada en la
+          emisión, adquirencia, procesamiento y ecosistemas de medios de pago.
+          Nuestras herramientas personalizadas impulsan el crecimiento de tu
+          empresa.
+        </p>
+        <a
+          class="font-bold text-xl border-b-2 max-[480px]:text-sm max-[1680px]:text-lg max-[1440px]:text-base max-[1280px]:text-sm"
+          href="/servicios">Conocé más ↗</a
+        >
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide">
+      <div
+        class="flex justify-center items-start flex-col gap-4 pl-20 pb-10 max-[550px]:w-[380px] relative max-[430px]:w-[345px]"
+      >
+        <img
+          src="/byuclub_v6_menos_espacio_ blanco.png"
+          alt="byuclub logo"
+          class="w-32 max-[1440px]:w-24 max-[500px]:w-28"
+        />
+        <h1
+          class="text-[4rem] uppercase leading-none max-[1440px]:text-5xl max-[480px]:text-4xl max-[1680px]:text-[3.7rem] max-[1280px]:text-[2.7rem] max-[1280px]:leading-none"
+        >
+          <span class="font-black font-CoFoBold">Descuentos</span>, experiencias
+          y accesos exclusivos.
+        </h1>
+        <p
+          class="font-CoFoNormal text-2xl max-[480px]:text-xs max-[1000px]:font-bold leading-6 max-[1440px]:text-sm max-[1440px]:leading-5 max-[1280px]:leading-4 w-4/5 max-[1000px]:w-full"
+        >
+          En nuestro club de beneficios vas a encontrar un espacio con
+          oportunidades únicas tanto para personas como para empresas.
+        </p>
+        <span
+          class="font-bold text-xl max-[480px]:text-sm max-[1680px]:text-lg max-[1440px]:text-base max-[1280px]:text-sm"
+          >¿Estás listo para descubrirlo?</span
+        >
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide">
+      <div
+        class="flex justify-center items-start flex-col gap-4 pl-20 pb-10 max-[550px]:w-[380px] relative max-[430px]:w-[345px]"
+      >
+        <img
+          src="/byuplay.png"
+          alt="byuplay logo"
+          class="w-32 max-[1440px]:w-24 max-[500px]:w-28"
+        />
+        <h1
+          class="text-[4rem] uppercase leading-none max-[1440px]:text-5xl max-[480px]:text-4xl max-[1680px]:text-[3.7rem] max-[1280px]:text-[2.7rem] max-[1280px]:leading-none"
+        >
+          La plataforma <span class="text-nowrap font-black font-CoFoBold"
+            >all-in-one</span
+          > que estabas esperando.
+        </h1>
+        <p
+          class="font-CoFoNormal text-2xl max-[480px]:text-xs max-[1000px]:font-bold leading-6 max-[1440px]:text-sm max-[1440px]:leading-5 max-[1280px]:leading-4 w-4/5 max-[1000px]:w-full"
+        >
+          En nuestra plataforma podés acceder al contenido más variado:
+          documentales, ebooks, películas, música y eventos en vivo, todo en un
+          solo lugar. Disfrutá de la transmisión exclusiva Fashion Tour 2025.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botones de Navegación (Se eliminó el onclick para evitar conflictos) -->
+  <button
+    id="prev-btn"
+    class="nav-button absolute top-1/2 left-4 transform shadow-md text-gray-400"
+  >
+    <!-- Icono de Flecha Izquierda -->
+    <svg
+      class="w-10 h-10"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      ><path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M15 19l-7-7 7-7"></path></svg
+    >
+  </button>
+
+  <button
+    id="next-btn"
+    class="nav-button absolute top-1/2 right-4 transform shadow-md text-gray-400"
+  >
+    <!-- Icono de Flecha Derecha -->
+    <svg
+      class="w-10 h-10"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      ><path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 5l7 7-7 7"></path></svg
+    >
+  </button>
+
+  <!-- Indicadores (Puntos/Dots) -->
+  <div
+    id="indicators"
+    class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2"
+  >
+    <!-- Los puntos se generarán con JavaScript -->
+  </div>
+</header>
+<style>
+  .slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .slide.active {
+    display: block;
+    opacity: 1;
+  }
+
+  /* Estilo para los botones de navegación */
+  .nav-button {
+    transition:
+      background-color 0.2s,
+      transform 0.2s;
+  }
+
+  .nav-button:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+
+  /* Estilo para los indicadores (dots) */
+  .indicator-dot {
+    transition: background-color 0.3s;
+  }
+
+  .indicator-dot.active {
+    background-color: #3b82f6; /* Blue-500 */
+  }
+</style><script>
+  // Variables globales
+  const slider = document.getElementById("image-slider");
+  const slides = document.querySelectorAll(".slide");
+  const indicatorsContainer = document.getElementById("indicators");
+  const prevBtn = document.getElementById("prev-btn"); // Nuevo
+  const nextBtn = document.getElementById("next-btn"); // Nuevo
+  let currentSlideIndex = 0;
+  let autoPlayInterval;
+  const intervalTime = 8000; // 8 segundos
+
+  /**
+   * Inicializa los indicadores (puntos) de navegación.
+   */
+  function initializeIndicators() {
+    slides.forEach((_, index) => {
+      const dot = document.createElement("div");
+      dot.classList.add(
+        "indicator-dot",
+        "w-3",
+        "h-3",
+        "rounded-full",
+        "bg-white",
+        "bg-opacity-50",
+        "cursor-pointer"
+      );
+      dot.setAttribute("data-index", index);
+
+      // Añadir evento click para navegar al slide correspondiente
+      dot.addEventListener("click", () => {
+        showSlide(index);
+        resetAutoPlay();
+      });
+
+      indicatorsContainer.appendChild(dot);
+    });
+  }
+
+  /**
+   * Muestra un slide específico por índice.
+   * @param {number} index - El índice del slide a mostrar.
+   */
+  function showSlide(index) {
+    // Manejar el bucle: si es menor que 0, va al final; si es mayor, va al inicio.
+    if (index >= slides.length) {
+      currentSlideIndex = 0;
+    } else if (index < 0) {
+      currentSlideIndex = slides.length - 1;
+    } else {
+      currentSlideIndex = index;
+    }
+
+    // Ocultar todos los slides
+    slides.forEach((slide) => slide.classList.remove("active"));
+
+    // Mostrar el slide actual
+    slides[currentSlideIndex].classList.add("active");
+
+    // Actualizar los indicadores
+    updateIndicators();
+  }
+
+  /**
+   * Actualiza el estado visual de los indicadores (puntos).
+   */
+  function updateIndicators() {
+    const dots = indicatorsContainer.querySelectorAll(".indicator-dot");
+    dots.forEach((dot, index) => {
+      dot.classList.remove("active", "bg-opacity-100");
+      dot.classList.add("bg-opacity-50");
+      if (index === currentSlideIndex) {
+        dot.classList.add("active", "bg-opacity-100");
+        dot.classList.remove("bg-opacity-50");
+      }
+    });
+  }
+
+  /**
+   * Muestra el siguiente slide.
+   */
+  function nextSlide() {
+    showSlide(currentSlideIndex + 1);
+  }
+
+  /**
+   * Muestra el slide anterior.
+   */
+  function prevSlide() {
+    showSlide(currentSlideIndex - 1);
+  }
+
+  /**
+   * Inicia el auto-play del carrusel.
+   */
+  function startAutoPlay() {
+    autoPlayInterval = setInterval(() => {
+      nextSlide();
+    }, intervalTime);
+  }
+
+  /**
+   * Reinicia el auto-play al interactuar con los botones o puntos.
+   */
+  function resetAutoPlay() {
+    clearInterval(autoPlayInterval);
+    startAutoPlay();
+  }
+
+  // --- Manejadores de eventos (CORREGIDO: Usando IDs y addEventListener) ---
+  // Se movió la lógica de asignación al window.onload para asegurar que los elementos existan.
+
+  // --- Inicialización al cargar la página ---
+  window.onload = function () {
+    // 1. Inicializar componentes
+    initializeIndicators();
+    showSlide(currentSlideIndex); // Asegura que el primer slide esté visible
+    startAutoPlay(); // Inicia la rotación automática
+
+    // 2. Asignar clics a los botones (solución al problema de navegación)
+    prevBtn.addEventListener("click", function () {
+      prevSlide();
+      resetAutoPlay();
+    });
+
+    nextBtn.addEventListener("click", function () {
+      nextSlide();
+      resetAutoPlay();
+    });
+
+    // 3. Pausar/Reanudar auto-play al pasar el ratón
+    slider.addEventListener("mouseenter", () =>
+      clearInterval(autoPlayInterval)
+    );
+    slider.addEventListener("mouseleave", startAutoPlay);
+  };
+</script>
