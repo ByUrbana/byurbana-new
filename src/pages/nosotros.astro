@@ -27,21 +27,21 @@ import HeroPages from "../components/HeroPages.astro";
           class="flex justify-between items-center gap-10 text-2xl max-[1440px]:text-xl max-[800px]:flex-col max-[600px]:text-base"
         >
           <div
-            class="bg-white rounded-full w-44 h-44 flex justify-center items-center"
+            class="bg-white rounded-full w-44 h-44 flex justify-center items-center cirlce-container"
           >
             <p class="font-CoFoMedium flex justify-center items-center gap-2">
               <span class="text-blue-600 text-4xl">+</span> ÁGIL
             </p>
           </div>
           <div
-            class="bg-white rounded-full w-44 h-44 flex justify-center items-center"
+            class="bg-white rounded-full w-44 h-44 flex justify-center items-center cirlce-container"
           >
             <p class="font-CoFoMedium flex justify-center items-center gap-2">
               <span class="text-blue-600 text-4xl">+</span> SEGURA
             </p>
           </div>
           <div
-            class="bg-white rounded-full w-44 h-44 flex justify-center items-center"
+            class="bg-white rounded-full w-44 h-44 flex justify-center items-center cirlce-container"
           >
             <p class="font-CoFoMedium flex justify-center items-center gap-2">
               <span class="text-blue-600 text-4xl">+</span> SIMPLE
@@ -231,6 +231,9 @@ import HeroPages from "../components/HeroPages.astro";
 </Layout>
 
 <style>
+  .cirlce-container{
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
+  }
   .card-inner {
     width: 100%;
     height: 100%;
