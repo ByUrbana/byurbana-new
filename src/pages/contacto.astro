@@ -6,17 +6,168 @@ import HeroPages from "../components/HeroPages.astro";
 
 <Layout title="BYU_Contacto">
   <main class="bg-blue-600">
-<section class="bg-gradient-to-t from-[#1b2027] to70% to-[#001228] h-[40vh] max-[800px]:h-fit flex justify-center items-center overflow-hidden relative">
-  <div
-    class="pt-20 flex justify-start items-center gap-10 w-full px-10 max-[850px]:gap-0"
-  >
+<!-- CONTACT -->
+<section
+  id="contact"
+  class="flex justify-center items-start flex-col h-screen max-[1680px]:h-fit border-t-[1px] border-gray-900 max-[1680px]:py-36 max-[1000px]:py-20 bg-gradient-to-l to-[#041226] from-[#041226] text-white py-20 relative overflow-hidden"
+>
       <h2
-        class="text-7xl max-xl:text-6xl text-blue-600 font-CoFoBold max-[1000px]:text-5xl max-[700px]:text-4xl"
+        class="text-7xl max-xl:text-6xl p-14 pb-20 text-blue-600 font-CoFoBold max-[1000px]:text-5xl max-[700px]:text-4xl"
       >
-        Contacto
+        CONTACTO
       </h2>
+  <img
+    class="bg-animation bg-animation1 absolute top-0 left-0 h-[120vh] z-10 -translate-y-[6%] max-[1000px]:h-[140%] max-[1000px]:-translate-y-[10vh] max-[1000px]:-translate-x-[10vw] max-[1050px]:hidden"
+    src="/image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+    alt=""
+  />
+  <img
+    class="bg-animation bg-animation2 absolute top-0 left-0 h-[120vh] z-10 -translate-y-[6%] max-[1000px]:h-[120%] max-[1000px]:-translate-y-[10vh] max-[1000px]:-translate-x-[20vw] max-[1050px]:hidden"
+    src="/image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+    alt=""
+  />
+  <img
+    class="bg-animation bg-animation3 absolute top-0 left-0 h-[120vh] z-10 -translate-y-[6%] max-[1000px]:h-[120%] max-[1000px]:-translate-y-[10vh] max-[1000px]:-translate-x-[30vw] max-[1050px]:hidden"
+    src="/image-040ade60-a8fb-46a8-b463-4d07c00a8df8.webp"
+    alt=""
+  />
+
+  <div
+    class="z-20 scale-[85%] w-fit grid grid-cols-[1fr_2fr] max-[1000px]:justify-items-center max-[1000px]:grid-cols-1 max-[1000px]:gap-8 mx-32 max-[1680px]:mx-24 max-[500px]:mx-6 relative"
+  >
+    <div
+      class="max-[1440px]:w-full max-[1000px]:w-fit max-[1000px]:mx-0 max-[1000px]:border-0 border-x-2 border-gray-600 px-10 max-[1000px]:px-0 max-[1280px]:px-6"
+    >
+      <span
+        class="text-xs font-CoFoMedium max-[1440px]:text-[10px] max-[1280px]:text-[9px]text-[#cce8fa] tracking-widest"
+      >
+        CONTACTATE CON <span class="font-CoFoBold">BY URBANA</span>
+      </span>
+      <h2
+        class="text-[5rem] leading-[.9] max-[1680px]:text-7xl max-[1680px]:leading-[.89] max-[1440px]:text-[4rem] max-[1366px]:text-6xl max-[1366px]:leading-[.9] max-[1280px]:text-[3.5rem] pt-5 max-[760px]:text-6xl text-[#cce8fa] max-[1000px]:leading-[.9] max-[500px]:text-5xl max-[360px]:text-4xl"
+      >
+        POTENCIÁ <br /> TU NEGOCIO. <span
+          class="font-CoFoBold max-[500px]:font-CoFoBlack"
+          >TRAELO A <img
+            class="py-2"
+            src="/BY-URBANA_ MENOS-ESPACIADA_ blanco.png"
+            alt="logo byurbana"
+          /></span
+        >
+      </h2>
+    </div>
+    <div
+      class="border-r-2 max-[1000px]:w-full max-[1000px]:border-r-0 pr-10 max-[1000px]:pr-0 border-gray-600 ml-10 max-[1000px]:ml-0"
+    >
+      <form
+        class="flex justify-center items-center flex-col flex-grow gap-5 max-[1440px]:gap-3 max-[1000px]:border-r-0 max-[1000px]:border-t-2 max-[1000px]:pr-0 max-[1000px]:pt-10 max-[1000px]:w-full"
+        action=""
+      >
+        <input
+          class="px-6 py-6 max-[1440px]:py-4 w-full max-[1440px]:text-sm rounded-lg"
+          placeholder="NOMBRE"
+          type="text"
+        />
+        <input
+          class="px-6 py-6 max-[1440px]:py-4 w-full max-[1440px]:text-sm rounded-lg"
+          placeholder="APELLIDO"
+          type="text"
+        />
+        <input
+          class="px-6 py-6 max-[1440px]:py-4 w-full max-[1440px]:text-sm rounded-lg"
+          placeholder="CORREO"
+          type="text"
+        />
+        <input
+          class="px-6 py-6 max-[1440px]:py-4 w-full max-[1440px]:text-sm rounded-lg"
+          placeholder="TELEFONO"
+          type="text"
+        />
+        <button
+          class="bg-[#4c4c4c] px-6 py-6 max-[1440px]:py-4 max-[1440px]:text-sm w-full font-medium text-gray-300 rounded-lg hover:bg-[#6c6c6c] transition-colors duration-300"
+          >ENVIAR</button
+        >
+      </form>
+    </div>
+    <div
+      class="flex gap-3 items-center pt-32 max-[1366px]:pt-20 max-[1000px]:pt-0 max-[1000px]:absolute max-[1000px]:bottom-0 max-[1000px]:left-0"
+    >
+      <img class="w-12" src="/Mastercar-Icon.svg" alt="Mastercar Logo" />
+      <span class="font-semibold tracking-widest text-[12px] leading-3">
+        <p class="p-0">SOMOS</p>
+        <p class="p-0">EMISORES</p>
+        <p class="p-0">MASTERCARD</p>
+      </span>
+    </div>
+    <p
+      class="pt-32 max-[1366px]:pt-20 max-[1440px]:leading-3 max-[1000px]:pt-0 text-sm max-[1440px]:text-[12px] max-[1000px]:text-[10px] font-medium max-[1000px]:pb-16"
+    >
+      Al enviar tus datos personales a través de este formulario, aceptás
+      nuestra Política de Privacidad y autorizás el tratamiento de la
+      información proporcionada para fines comerciales y administrativos. Tus
+      datos serán utilizados exclusivamente para gestionar tu solicitud y
+      mejorar la atención, garantizando su confidencialidad y seguridad conforme
+      a la legislación vigente.
+    </p>
   </div>
 </section>
-    <Contact />
+
   </main>
 </Layout>
+
+<style>
+  .bg-animation {
+    animation-name: bg-contact;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .bg-animation1 {
+    animation-name: bg-animation-contact1;
+  }
+  .bg-animation2 {
+    animation-name: bg-animation-contact2;
+  }
+  .bg-animation3 {
+    animation-name: bg-animation-contact3;
+  }
+  @keyframes bg-animation-contact1 {
+    0% {
+      left: -10vw;
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.3;
+    }
+    100% {
+      left: 50vw;
+      opacity: 0;
+    }
+  }
+  @keyframes bg-animation-contact2 {
+    0% {
+      left: -30vw;
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.3;
+    }
+    100% {
+      left: 30vw;
+      opacity: 0;
+    }
+  }
+  @keyframes bg-animation-contact3 {
+    0% {
+      left: -50vw;
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.3;
+    }
+    100% {
+      left: 10vw;
+      opacity: 0;
+    }
+  }
+</style>
