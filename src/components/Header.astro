@@ -1,3 +1,7 @@
+---
+import LanguageSelector from './LanguageSelector.astro';
+---
+
 <header
   class="fixed top-0 py-4 max-[1366px]:pt-5 z-50 w-full text-white bg-slate-400 glass"
 >
@@ -43,32 +47,9 @@
       </a>
     </div>
     <div class="flex items-center gap-5">
-      <div class="flex gap-2 max-[550px]:ml-3 max-[768px]:hidden">
-        <button>
-          <img
-            class="w-8 max-lg:w-6"
-            src="/estados-unidos.png"
-            alt="Bandera Estados Unidos"
-          />
-        </button>
-        <button>
-          <img class="w-8 max-lg:w-6" src="/brasil.png" alt="Bandera Brasil" />
-        </button>
-        <button>
-          <img
-            class="w-8 max-lg:w-6"
-            src="/argentina.png"
-            alt="Bandera Argentina"
-          />
-        </button>
-        <button>
-          <img
-            class="w-8 max-lg:w-6"
-            src="/bandera-china.png"
-            alt="Bandera China"
-          />
-        </button>
-      </div>
+      <!-- Seletor de idioma -->
+      <LanguageSelector />
+      
       <div id="openNavbar" class="cursor-pointer">
         <img
           class="w-5 max-[1680px]:w-5 max-[500px]:w-3 max-[550px]:ml-3"
@@ -85,39 +66,48 @@
             <li>
               <a
                 class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
-                href="/">Home</a
-              >
+                href="/"
+                data-translate
+                data-original-text="Home"
+              >Home</a>
             </li>
             <li>
               <a
                 class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
-                href="/servicios">Servicios</a
-              >
+                href="/servicios"
+                data-translate
+                data-original-text="Servicios"
+              >Servicios</a>
             </li>
             <li>
               <a
                 class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
-                href="/nosotros">Nosotros</a
-              >
+                href="/nosotros"
+                data-translate
+                data-original-text="Nosotros"
+              >Nosotros</a>
             </li>
             <li>
               <a
                 class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
-                href="/modelos">Modelos</a
-              >
+                href="/modelos"
+                data-translate
+                data-original-text="Modelos"
+              >Modelos</a>
             </li>
             <li>
               <a
                 class="text-xl font-CoFoNormal hover:text-2xl transition-all duration-300"
-                href="/contacto">Contacto</a
-              >
+                href="/contacto"
+                data-translate
+                data-original-text="Contacto"
+              >Contacto</a>
             </li>
           </ul>
           <button
             id="bottom-close"
             class="absolute top-5 right-5 py-2 px-8 rounded-2xl hover:scale-105 transition-all border-black border text-black text-xl font-medium max-[1000px]:px-8 max-[1000px]:py-2"
-            >X</button
-          >
+            >X</button>
           <div
             class="flex justify-between w-full flex-row p-10 items-end absolute bottom-0 text-black text-lg max-[550px]:flex-col max-[550px]:gap-5 max-[550px]:items-center max-[550px]:pt-0"
           >
@@ -126,8 +116,7 @@
                 class="text-sm border-b-4 border-black"
                 href="https://www.instagram.com/by.urbana/"
                 target="_blank"
-                rel="noopener noreferrer">Instagram</a
-              >
+                rel="noopener noreferrer">Instagram</a>
               <span>↗</span>
             </div>
             <div>
@@ -135,8 +124,7 @@
                 class="text-sm border-b-4 border-black"
                 href="https://www.linkedin.com/company/byurbana/"
                 target="_blank"
-                rel="noopener noreferrer">LinkedIn</a
-              >
+                rel="noopener noreferrer">LinkedIn</a>
               <span>↗</span>
             </div>
           </div>

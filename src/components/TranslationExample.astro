@@ -1,0 +1,73 @@
+---
+// Exemplo de como usar o sistema de tradução em componentes
+---
+
+<div class="translation-example">
+  <h2 data-translate data-original-text="Ejemplo de Traducción">
+    Ejemplo de Traducción
+  </h2>
+  
+  <p data-translate data-original-text="Este es un párrafo que será traducido automáticamente cuando el usuario seleccione un idioma diferente.">
+    Este es un párrafo que será traducido automáticamente cuando el usuario seleccione un idioma diferente.
+  </p>
+  
+  <button data-translate data-original-text="Hacer clic aquí">
+    Hacer clic aquí
+  </button>
+  
+  <ul>
+    <li data-translate data-original-text="Primer elemento de la lista">
+      Primer elemento de la lista
+    </li>
+    <li data-translate data-original-text="Segundo elemento de la lista">
+      Segundo elemento de la lista
+    </li>
+    <li data-translate data-original-text="Tercer elemento de la lista">
+      Tercer elemento de la lista
+    </li>
+  </ul>
+</div>
+
+<style>
+  .translation-example {
+    padding: 2rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+  
+  .translation-example h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .translation-example p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .translation-example button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .translation-example button:hover {
+    background: #0056b3;
+  }
+  
+  .translation-example ul {
+    list-style: disc;
+    padding-left: 2rem;
+  }
+  
+  .translation-example li {
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+</style>
